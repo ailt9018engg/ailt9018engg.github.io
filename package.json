@@ -12,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevinthwu/ailt-test-page.git"
+    "url": "git+https://github.com/ailt9018engg/ailt9018engg.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/kevinthwu/ailt-test-page/issues"
+    "url": "https://github.com/ailt9018engg/issues"
   },
-  "homepage": "https://github.com/kevinthwu/ailt-test-page#readme",
+  "homepage": "https://github.com/ailt9018engg/ailt9018engg.github.io#readme",
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.2",
     "vite": "^7.3.0"
