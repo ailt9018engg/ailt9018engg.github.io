@@ -18,8 +18,19 @@ export const MailIcon = ({ className = 'w-6 h-6' }: IconProps) => (
 );
 
 export const CreditIcon = ({ className = 'w-6 h-6' }: IconProps) => (
-  <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 6v-1h4v1m-4 0H8m11 11v-1a2 2 0 00-2-2H7a2 2 0 00-2 2v1m14 0v1h-4v-1h4z" />
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    className={} 
+    fill="none" 
+    viewBox="0 0 24 24" 
+    stroke="currentColor" 
+    strokeWidth={}
+  >
+    <path 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      d="M22 10v6M2 10l10-5 10 5-10 5-10-5zM6 12v5c3 3 9 3 12 0v-5" 
+    />
   </svg>
 );
 
