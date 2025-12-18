@@ -7,6 +7,7 @@ export interface CourseData {
     name: string;
     email: string;
   };
+  instructors: string[];
   type: string;
   prerequisite: string;
   grading: string;
@@ -72,9 +73,10 @@ export const courseData: CourseData = {
   title: "Artificial Intelligence Literacy II – AI for Engineers",
   credits: 3,
   coordinator: {
-    name: "Dr. YANG Lei",
+    name: "Dr. Lei YANG",
     email: "lyang125@hku.hk",
   },
+  instructors: ["Dr. Lei YANG", "Dr. Kevin WU"],
   type: "UG 5 Graduation Requirements",
   prerequisite: "AILT1001",
   grading: "Pass, Fail or Distinction",

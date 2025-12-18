@@ -17,6 +17,33 @@ export const MailIcon = ({ className = 'w-6 h-6' }: IconProps) => (
   </svg>
 );
 
+export const TeacherIcon = ({ className = 'w-6 h-6' }: IconProps) => (
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+  <path
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M12 7a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"
+  />
+  <path
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M6 15a3 3 0 013-3h1a3 3 0 013 3v3H6v-3z"
+  />
+
+  <path
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M13 6h7v8h-7z"
+  />
+  <path
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M14.5 8.5H19M14.5 10.5H18"
+  />
+  </svg>
+);
+
+
 export const CreditIcon = ({ className = 'w-6 h-6' }: IconProps) => (
   <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
     <path 

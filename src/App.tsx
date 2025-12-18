@@ -4,7 +4,7 @@ import { courseData } from './data.ts';
 import { Section } from './components/Section.tsx';
 import { ModulesAccordion } from './components/ModulesAccordion.tsx';
 import { Lecturers } from './components/Lecturers.tsx';
-import { UserIcon, MailIcon, CreditIcon, PrerequisiteIcon, QuotaIcon, GradingIcon, CheckCircleIcon } from './components/Icons.tsx';
+import { UserIcon, MailIcon, TeacherIcon, CreditIcon, PrerequisiteIcon, QuotaIcon, GradingIcon, CheckCircleIcon } from './components/Icons.tsx';
 
 const Hero = () => (
   <div className="relative h-screen flex items-center justify-center text-center bg-white overflow-hidden">
@@ -60,9 +60,10 @@ export default function App() {
                     <InfoCard icon={<UserIcon />} title="Course Coordinator">
                         {courseData.coordinator.name}
                     </InfoCard>
-                    <InfoCard icon={<MailIcon />} title="Contact">
-                        <a href={`mailto:${courseData.coordinator.email}`} className="hover:text-purple-600 transition-colors">{courseData.coordinator.email}</a><br/>
-                        <a href={`mailto:${courseData.inquiries}`} className="hover:text-purple-600 transition-colors">{courseData.inquiries} (Inquiries)</a>
+                    <InfoCard icon={<TeacherIcon />} title="Instructors">
+                        {courseData.instructors.map((instructor) => (
+                            <div key={instructor}>{instructor}</div>
+                        ))}
                     </InfoCard>
                     <InfoCard icon={<CreditIcon />} title="Credits">{courseData.credits}</InfoCard>
                     <InfoCard icon={<PrerequisiteIcon />} title="Pre-requisite">{courseData.prerequisite}</InfoCard>
