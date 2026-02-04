@@ -119,6 +119,64 @@ export default function Schedule() {
             </tbody>
           </table>
         </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <h2 className="text-2xl font-semibold mb-4">Tutorial allocation</h2>
+          <div className="overflow-x-auto bg-slate-50 p-4 rounded-lg border border-slate-200">
+            <table className="min-w-full table-auto">
+              <thead>
+                <tr className="text-left text-slate-700">
+                  <th className="px-4 py-2">Subclass</th>
+                  <th className="px-4 py-2">Modules</th>
+                  <th className="px-4 py-2">Tutorial session</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t">
+                  <td className="px-4 py-3">A</td>
+                  <td className="px-4 py-3">1+3</td>
+                  <td className="px-4 py-3">T1</td>
+                </tr>
+                <tr className="border-t bg-white">
+                  <td className="px-4 py-3">B</td>
+                  <td className="px-4 py-3">1+3</td>
+                  <td className="px-4 py-3">T2</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">C</td>
+                  <td className="px-4 py-3">1+4</td>
+                  <td className="px-4 py-3">T3</td>
+                </tr>
+                <tr className="border-t bg-white">
+                  <td className="px-4 py-3">D</td>
+                  <td className="px-4 py-3">1+4</td>
+                  <td className="px-4 py-3">T4</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">E</td>
+                  <td className="px-4 py-3">2+3</td>
+                  <td className="px-4 py-3">T3</td>
+                </tr>
+                <tr className="border-t bg-white">
+                  <td className="px-4 py-3">F</td>
+                  <td className="px-4 py-3">2+3</td>
+                  <td className="px-4 py-3">T4</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">G</td>
+                  <td className="px-4 py-3">2+4</td>
+                  <td className="px-4 py-3">T1</td>
+                </tr>
+                <tr className="border-t bg-white">
+                  <td className="px-4 py-3">H</td>
+                  <td className="px-4 py-3">2+4</td>
+                  <td className="px-4 py-3">T2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-3 text-sm text-slate-600">Note: T1, T2, T3, T4 are placeholders for tutorial day and time (e.g., Monday, 14:00-16:00) and will be replaced when confirmed.</p>
+        </div>
       </div>
     </div>
   );
