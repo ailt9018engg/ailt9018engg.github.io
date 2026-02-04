@@ -38,7 +38,7 @@ export default function NavBar({ current, onNavigate }: NavProps) {
             </a>
             <nav className="hidden md:flex items-center space-x-2">
               {link('/', 'Home')}
-              {link('/schedule', 'Schedule')}
+              {link('/schedule', 'Content, Schedule, and Subclasses')}
               {link('/readings', 'Readings')}
               {link('/contact', 'Contact')}
             </nav>
