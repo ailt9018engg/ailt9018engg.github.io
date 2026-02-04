@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import App from './App';
 import Schedule from './pages/Schedule';
 import Contact from './pages/Contact';
+import Readings from './pages/Readings';
 
 function routeFromPath() {
   const p = window.location.pathname;
@@ -29,6 +30,7 @@ export default function AppRouter() {
   let Content: React.ReactNode;
   if (route === '/schedule') Content = <Schedule />;
   else if (route === '/contact') Content = <Contact />;
+  else if (route === '/readings') Content = <Readings />;
   else Content = <App />;
 
   return (

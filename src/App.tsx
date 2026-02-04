@@ -7,17 +7,27 @@ import { Lecturers } from './components/Lecturers.tsx';
 import { UserIcon, MailIcon, TeacherIcon, CreditIcon, PrerequisiteIcon, QuotaIcon, GradingIcon, CheckCircleIcon } from './components/Icons.tsx';
 
 const Hero = () => (
-  <div className="relative h-screen flex items-center justify-center text-center bg-white overflow-hidden">
-    <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(to_bottom,white_20%,transparent_100%)]"></div>
-    <div className="relative z-10 px-4">
-      <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-4 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-600 text-transparent bg-clip-text">
-        {courseData.code}
-      </h1>
-      <p className="max-w-4xl mx-auto text-2xl md:text-3xl font-semibold text-slate-700">
-        {courseData.title}
-      </p>
+    <div className="relative h-screen flex items-center justify-center text-center bg-white overflow-hidden">
+        <video
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            autoPlay
+            muted
+            loop
+            playsInline
+            src="/videos/background.mp4"
+        />
+        <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(to_bottom,white_20%,transparent_100%)]"></div>
+        <div className="relative z-10 px-4">
+            <div className="inline-block bg-white/60 backdrop-blur-sm px-6 py-4 rounded-lg">
+                <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-4 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-600 text-transparent bg-clip-text">
+                    {courseData.code}
+                </h1>
+                <p className="max-w-4xl mx-auto text-2xl md:text-3xl font-semibold text-slate-700">
+                    {courseData.title}
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
 );
 
 const InfoCard = ({ icon, title, children }: { icon: React.ReactNode, title: string, children: React.ReactNode }) => (

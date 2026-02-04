@@ -181,7 +181,7 @@ export const courseData: CourseData = {
     {
       title: "Module 2: Vibe coding for robotics",
       description:
-        "This module introduces 'vibe coding' for robotics, focusing on intuitive and rapid prototyping. Students will learn to translate high-level concepts and intentions into functional robotic behaviors, leveraging modern programming paradigms and simulation tools. The emphasis is on creative problem-solving and developing a feel for robotic interaction, enabling students to quickly build and test ideas in a dynamic environment. [Module description (100 words)]",
+        "This module introduces 'vibe coding' for robotics, focusing on intuitive and rapid prototyping. Students will learn to translate high-level concepts and intentions into functional robotic behaviors, leveraging modern programming paradigms and simulation tools. The emphasis is on creative problem-solving and developing a feel for robotic interaction, enabling students to quickly build and test ideas in a dynamic environment.",
     },
     {
       title: "Module 3: Deep learning for computer vision",
