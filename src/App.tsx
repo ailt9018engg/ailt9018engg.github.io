@@ -151,7 +151,9 @@ export default function App() {
             <ModulesAccordion />
             <div className="mt-8 p-6 bg-slate-100 rounded-lg border border-slate-200">
                 <h3 className="font-bold text-xl text-slate-800 mb-2">Summary</h3>
-                {courseData.summary.split('\n\n').map((paragraph, i) => <p key={i} className="mb-4 last:mb-0">{paragraph}</p>)}
+                {courseData.summary.split('\n\n').map((paragraph, i) => (
+                    <p key={i} className="mb-4 last:mb-0" dangerouslySetInnerHTML={{ __html: paragraph }} />
+                ))}
             </div>
         </Section>
 
