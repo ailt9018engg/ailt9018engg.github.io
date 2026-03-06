@@ -63,6 +63,7 @@ export default function App() {
   return (
     <div className="text-slate-800 antialiased">
       <Hero />
+
       <main className="-mt-32 relative z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
             <div className="bg-white/60 backdrop-blur-lg border border-slate-200/70 rounded-xl shadow-2xl shadow-slate-300/50 p-8">
@@ -84,6 +85,14 @@ export default function App() {
                 </div>
             </div>
         </div>
+
+                <Section id="message" title="Message to Students">
+                    <div className="bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 border border-purple-100 rounded-xl p-6 md:p-8 shadow-md mb-8">
+                        <p className="text-lg md:text-xl text-slate-800">
+                            AI changes fast, and this course is built to evolve with it. <strong>We regularly refresh the course content</strong> to reflect the latest developments, emerging tools, and real-world engineering practices, so you learn what matters now and stay ready for what comes next. At the same time, this is not a course about AI in theory. It is designed for engineers who want to use AI to build, test, and solve problems. The course is strongly <strong>project-based and hands-on</strong>, with many opportunities to <strong>experiment directly with AI tools and technologies</strong>. From the very beginning, you will <strong>apply AI to real engineering tasks</strong>, using it to support coding, build models, and explore solutions tailored to your own field. The emphasis is on learning by doing, so you will not just understand AI concepts, but gain confidence in actually using and creating with AI.
+                        </p>
+                    </div>
+                </Section>
 
         <Section id="description" title="Course Description">
           <p>{courseData.description}</p>
