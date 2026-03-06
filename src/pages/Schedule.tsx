@@ -26,19 +26,19 @@ export default function Schedule() {
               {/* Week 1 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">1</td>
-                <td className="px-4 py-3 w-1/2">Introduction to AI for Technical Reading</td>
+                <td className="px-4 py-3 w-1/2">Introduction to AI for technical reading</td>
                 <td className="px-4 py-3 w-1/2"> AI tools in assisted readings</td>
               </tr>
               {/* Week 2 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">2</td>
-                <td className="px-4 py-3 w-1/2">Prompt Engineering Fundamentals</td>
+                <td className="px-4 py-3 w-1/2">Prompt engineering fundamentals</td>
                 <td className="px-4 py-3 w-1/2">Compare and analysis of AI tools</td>
               </tr>
               {/* Week 3 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">3</td>
-                <td className="px-4 py-3 w-1/2">Knowledge Management and Domain-Specific Applications</td>
+                <td className="px-4 py-3 w-1/2">Knowledge management and domain-specific applications</td>
                 <td className="px-4 py-3 w-1/2">Project preparation</td>
               </tr>
 
@@ -51,20 +51,20 @@ export default function Schedule() {
               {/* Week 4 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">4</td>
-                <td className="px-4 py-3 w-1/2">TBC</td>
-                <td className="px-4 py-3 w-1/2">Project preparation</td>
+                <td className="px-4 py-3 w-1/2">Design</td>
+                <td className="px-4 py-3 w-1/2">Design your project with copilot</td>
               </tr>
               {/* Week 5 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">5</td>
-                <td className="px-4 py-3 w-1/2">TBC</td>
-                <td className="px-4 py-3 w-1/2">TBC</td>
+                <td className="px-4 py-3 w-1/2">Code Structure and debug</td>
+                <td className="px-4 py-3 w-1/2">Debug with copilot</td>
               </tr>
               {/* Week 6 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">6</td>
-                <td className="px-4 py-3 w-1/2">TBC</td>
-                <td className="px-4 py-3 w-1/2">TBC</td>
+                <td className="px-4 py-3 w-1/2">Advanced topics in embodied AI</td>
+                <td className="px-4 py-3 w-1/2">Cross-project integration</td>
               </tr>
 
               {/* Module 3 Header */}
@@ -76,20 +76,20 @@ export default function Schedule() {
               {/* Week 7 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">7</td>
-                <td className="px-4 py-3 w-1/2">TBC</td>
-                <td className="px-4 py-3 w-1/2">TBC</td>
+                <td className="px-4 py-3 w-1/2">Introduction to deep learning and computer vision</td>
+                <td className="px-4 py-3 w-1/2">Train hyour own YOLO model from scratch</td>
               </tr>
               {/* Week 8 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">8</td>
-                <td className="px-4 py-3 w-1/2"> TBC</td>
-                <td className="px-4 py-3 w-1/2">TBC</td>
+                <td className="px-4 py-3 w-1/2">Convolutional neural networks and model optimization</td>
+                <td className="px-4 py-3 w-1/2">Evaluate and improve your model</td>
               </tr>
               {/* Week 9 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">9</td>
-                <td className="px-4 py-3 w-1/2">TBC</td>
-                <td className="px-4 py-3 w-1/2">TBC</td>
+                <td className="px-4 py-3 w-1/2">Computer vision for engineering applications</td>
+                <td className="px-4 py-3 w-1/2">Taster of state-of-the-art computer vision tools</td>
               </tr>
 
               {/* Module 4 Header */}
@@ -107,13 +107,13 @@ export default function Schedule() {
               {/* Week 11 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">11</td>
-                <td className="px-4 py-3 w-1/2">Inside the RAG Pipeline: Architecture, Evaluation & Enhancement</td>
-                <td className="px-4 py-3 w-1/2">Build your own RAG Chatbot</td>
+                <td className="px-4 py-3 w-1/2">Inside the RAG pipeline: architecture, evaluation & enhancement</td>
+                <td className="px-4 py-3 w-1/2">Build your own RAG chatbot</td>
               </tr>
               {/* Week 12 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">12</td>
-                <td className="px-4 py-3 w-1/2">Advanced Topics on RAG and RAG Applications in Engineering</td>
+                <td className="px-4 py-3 w-1/2">Advanced topics on RAG and RAG applications in engineering</td>
                 <td className="px-4 py-3 w-1/2">Unlock the capability of VLM</td>
               </tr>
             </tbody>
