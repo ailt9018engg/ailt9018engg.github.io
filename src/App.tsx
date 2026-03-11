@@ -133,7 +133,7 @@ export default function App() {
 
         <Lecturers />
 
-        <Section id="plos" title="Program Learning Outcomes (PLOs)">
+        {/* <Section id="plos" title="Program Learning Outcomes (PLOs)">
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {courseData.plos.map((plo, i) => (
                     <li key={i} className="bg-slate-100 p-4 rounded-lg flex items-start border border-slate-200">
@@ -142,7 +142,7 @@ export default function App() {
                     </li>
                 ))}
             </ul>
-        </Section>
+        </Section> */}
 
         <Section id="details" title="Course Details">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
