@@ -88,9 +88,28 @@ export default function App() {
 
                 <Section id="message" title="Message to Students">
                     <div className="bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 border border-purple-100 rounded-xl p-6 md:p-8 shadow-md mb-8">
-                        <p className="text-lg md:text-xl text-slate-800">
-                            AI changes fast, and this course is built to evolve with it. <strong>We regularly refresh the course content</strong> to reflect the latest developments, emerging tools, and real-world engineering practices, so you learn what matters now and stay ready for what comes next. At the same time, this is not a course about AI in theory. It is designed for engineers who want to use AI to build, test, and solve problems. The course is strongly <strong>project-based and hands-on</strong>, with many opportunities to <strong>experiment directly with AI tools and technologies</strong>. From the very beginning, you will <strong>apply AI to real engineering tasks</strong>, using it to support coding, build models, and explore solutions tailored to your own field. The emphasis is on learning by doing, so you will not just understand AI concepts, but gain confidence in actually using and creating with AI.
-                        </p>
+                        <ul className="space-y-4">
+                            <li className="bg-white/60 p-4 rounded-lg flex items-start">
+                                <PrerequisiteIcon className="flex-shrink-0 w-6 h-6 text-purple-600 mr-4 mt-1" />
+                                <p className="text-lg md:text-xl text-slate-800 m-0">AI is moving fast, and this course is built to keep up.</p>
+                            </li>
+                            <li className="bg-white/60 p-4 rounded-lg flex items-start">
+                                <CreditIcon className="flex-shrink-0 w-6 h-6 text-purple-600 mr-4 mt-1" />
+                                <p className="text-lg md:text-xl text-slate-800 m-0">You will work with current AI tools, emerging technologies, and real engineering applications.</p>
+                            </li>
+                            <li className="bg-white/60 p-4 rounded-lg flex items-start">
+                                <TeacherIcon className="flex-shrink-0 w-6 h-6 text-purple-600 mr-4 mt-1" />
+                                <p className="text-lg md:text-xl text-slate-800 m-0">This is a <strong>hands-on, project-driven</strong> course where you learn by building, testing, and experimenting.</p>
+                            </li>
+                            <li className="bg-white/60 p-4 rounded-lg flex items-start">
+                                <UserIcon className="flex-shrink-0 w-6 h-6 text-purple-600 mr-4 mt-1" />
+                                <p className="text-lg md:text-xl text-slate-800 m-0">From day one, you will use AI to <strong>tackle real engineering tasks</strong> and explore solutions in your own field.</p>
+                            </li>
+                            <li className="bg-white/60 p-4 rounded-lg flex items-start">
+                                <CheckCircleIcon className="flex-shrink-0 w-6 h-6 text-purple-600 mr-4 mt-1" />
+                                <p className="text-lg md:text-xl text-slate-800 m-0">By the end, you will not only understand AI. You will know how to <strong>apply it with confidence.</strong></p>
+                            </li>
+                        </ul>
                     </div>
                 </Section>
 

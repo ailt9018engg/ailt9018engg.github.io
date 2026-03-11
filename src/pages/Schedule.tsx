@@ -51,7 +51,7 @@ export default function Schedule() {
               {/* Week 4 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">4</td>
-                <td className="px-4 py-3 w-1/2">Design</td>
+                <td className="px-4 py-3 w-1/2">Project design</td>
                 <td className="px-4 py-3 w-1/2">Design your project with copilot</td>
               </tr>
               {/* Week 5 */}
