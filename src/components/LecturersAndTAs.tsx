@@ -1,21 +1,13 @@
-
 import React from 'react';
 import { courseData } from '../data.ts';
 import { Section } from './Section.tsx';
 
-const LecturerCard = ({ name, photoPath }: { name: string; photoPath: string }) => {
+const TeamCard = ({ name, photoPath }: { name: string; photoPath: string }) => {
   const [imgError, setImgError] = React.useState(false);
 
   return (
     <div className="text-center">
       <div className="relative w-40 h-40 mx-auto mb-4">
-        {/* 
-          Instructions for adding lecturer photos:
-          1. Create a 'public/images' directory in your project root if it doesn't exist.
-          2. Place your lecturer images (e.g., lecturer1.png) inside 'public/images'.
-          3. The 'photoPath' in data.ts should correspond to these files (e.g., '/images/lecturer1.png').
-          The build process will then make them available at the root of the server.
-        */}
         {!imgError ? (
           <img 
             src={photoPath} 
@@ -37,11 +29,21 @@ const LecturerCard = ({ name, photoPath }: { name: string; photoPath: string }) 
 };
 
 export const Lecturers = () => (
-  <Section id="lecturers" title="Meet the Lecturers">
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8">
-      {courseData.lecturers.map((lecturer, index) => (
-        <LecturerCard key={index} name={lecturer.name} photoPath={lecturer.photoPath} />
-      ))}
+  <Section id="lecturers" title="Meet the Teaching Team">
+    <div>
+      <h3 className="text-2xl font-semibold text-slate-900 mb-8">Lecturers</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8 mb-12">
+        {courseData.lecturers.map((lecturer, index) => (
+          <TeamCard key={index} name={lecturer.name} photoPath={lecturer.photoPath} />
+        ))}
+      </div>
+
+      <h3 className="text-2xl font-semibold text-slate-900 mb-8">Teaching Assistants</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8">
+        {courseData.teachingAssistants.map((ta, index) => (
+          <TeamCard key={index} name={ta.name} photoPath={ta.photoPath} />
+        ))}
+      </div>
     </div>
   </Section>
 );
