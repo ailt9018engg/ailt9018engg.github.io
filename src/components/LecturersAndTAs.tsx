@@ -40,7 +40,7 @@ export const Lecturers = () => (
 
       <h3 className="text-2xl font-semibold text-slate-900 mb-8">Teaching Assistants</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8">
-        {courseData.teachingAssistants.map((ta, index) => (
+        {courseData.TeachingAssistants.map((ta, index) => (
           <TeamCard key={index} name={ta.name} photoPath={ta.photoPath} />
         ))}
       </div>
