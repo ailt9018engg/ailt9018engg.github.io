@@ -66,6 +66,10 @@ export interface CourseData {
     name: string;
     photoPath: string;
   }[];
+  TeachingAssistants: {
+  name: string;
+  photoPath: string;
+  }[];
 }
 
 export const courseData: CourseData = {
