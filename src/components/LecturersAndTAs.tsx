@@ -28,7 +28,7 @@ const TeamCard = ({ name, photoPath }: { name: string; photoPath: string }) => {
   );
 };
 
-export const Lecturers = () => (
+export const LecturersAndTAs = () => (
   <Section id="lecturers" title="Meet the Teaching Team">
     <div>
       <h3 className="text-2xl font-semibold text-slate-900 mb-8">Lecturers</h3>
