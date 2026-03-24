@@ -3,7 +3,7 @@ import React from 'react';
 import { courseData } from './data.ts';
 import { Section } from './components/Section.tsx';
 import { ModulesAccordion } from './components/ModulesAccordion.tsx';
-import { Lecturers } from './components/Lecturers.tsx';
+import { LecturersAndTAs } from './components/LecturersAndTAs.tsx';
 import { UserIcon, MailIcon, TeacherIcon, CreditIcon, PrerequisiteIcon, QuotaIcon, GradingIcon, CheckCircleIcon } from './components/Icons.tsx';
 
 const Hero = () => (
@@ -131,7 +131,7 @@ export default function App() {
             </ul>
         </Section>
 
-        <Lecturers />
+        <LecturersAndTAs />
 
         {/* <Section id="plos" title="Program Learning Outcomes (PLOs)">
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
