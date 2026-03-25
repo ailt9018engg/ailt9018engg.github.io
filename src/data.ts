@@ -208,6 +208,6 @@ export const courseData: CourseData = {
   ],
   TeachingAssistants: [
     { name: "Mr. Karlos MA", photoPath: "/images/karlos.png" },
-    { name: "Mr. Joe Chan", photoPath: "/images/Joe.png" },
+    { name: "Mr. Joe CHAN", photoPath: "/images/Joe.png" },
   ],
 };
