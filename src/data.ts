@@ -86,7 +86,7 @@ export const courseData: CourseData = {
   grading: "Pass, Fail or Distinction",
   assessment: "100% coursework",
   quota: 400,
-  inquiries: "ailt9018engg@gmail.com",
+  inquiries: "ailt9018engg@hku.hk",
   description:
     "AI for Engineers introduces students to artificial intelligence (AI) in engineering contexts. Through two modular learning units, students progress from 1) adopting AI tools for engineering literacy, to 2) hands-on development, and finally to 3) problem-focused application, while emphasizing ethical and responsible AI use. The course prepares students to apply core AI technologies to diverse engineering challenges and to develop fundamental skills for learning and applying AI in engineering. While students are expected to have basic programming knowledge from prior coursework, the necessary coding skills will be further developed and applied within this course.",
   objectives: [
