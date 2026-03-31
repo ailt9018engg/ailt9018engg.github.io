@@ -77,7 +77,7 @@ export default function Schedule() {
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">7</td>
                 <td className="px-4 py-3 w-1/2">Introduction to deep learning and computer vision</td>
-                <td className="px-4 py-3 w-1/2">Train hyour own YOLO model from scratch</td>
+                <td className="px-4 py-3 w-1/2">Train your own YOLO model from scratch</td>
               </tr>
               {/* Week 8 */}
               <tr className="border-t bg-white">
