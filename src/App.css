@@ -13,10 +13,10 @@
 .week-mod3 { background: #c4e5bf; color: #1e5218; font-weight: 600; padding: 6px 4px; width: 76px; font-size: 11.5px; }
 .week-mod4 { background: #dcc5ee; color: #4a1870; font-weight: 600; padding: 6px 4px; width: 76px; font-size: 11.5px; }
 .per-week-label { background: #1e2d3d; color: white; font-weight: bold; padding: 7px 14px; font-size: 12.5px; }
-.per-week-mod1 { background: #e8f2fa; color: #333; font-size: 10.5px; padding: 5px 4px; height: 58px; line-height: 1.6; }
-.per-week-mod2 { background: #fdf3de; color: #333; font-size: 10.5px; padding: 5px 4px; height: 58px; line-height: 1.6; }
-.per-week-mod3 { background: #eaf6e8; color: #333; font-size: 10.5px; padding: 5px 4px; height: 58px; line-height: 1.6; }
-.per-week-mod4 { background: #f3ecfa; color: #333; font-size: 10.5px; padding: 5px 4px; height: 58px; line-height: 1.6; }
+.per-week-mod1 { background: #e8f2fa; color: #333; font-size: 9px; padding: 5px 4px; height: 58px; line-height: 1.6; }
+.per-week-mod2 { background: #fdf3de; color: #333; font-size: 9px; padding: 5px 4px; height: 58px; line-height: 1.6; }
+.per-week-mod3 { background: #eaf6e8; color: #333; font-size: 9px; padding: 5px 4px; height: 58px; line-height: 1.6; }
+.per-week-mod4 { background: #f3ecfa; color: #333; font-size: 9px; padding: 5px 4px; height: 58px; line-height: 1.6; }
 .sc-label { background: #e8ecf0; font-weight: 600; color: #222; padding: 4px 10px; height: 26px; font-size: 11.5px; }
 .chk1 { background: #4a8fcc; color: white; font-size: 17px; font-weight: bold; }
 .chk2 { background: #d4960f; color: white; font-size: 17px; font-weight: bold; }
