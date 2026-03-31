@@ -185,7 +185,7 @@ export const courseData: CourseData = {
     {
       title: "Module 2: Vibe coding from design to deployment",
       description:
-        "This module introduces 'vibe coding' for robotics, focusing on intuitive and rapid prototyping. Students will learn to translate high-level concepts and intentions into functional robotic behaviors, leveraging modern programming paradigms and simulation tools. The emphasis is on creative problem-solving and developing a feel for robotic interaction, enabling students to quickly build and test ideas in a dynamic environment.",
+        "After attending this module, you will be able to design, build, and complete an engineering project using AI coding tools. You will learn how to translate your ideas into structured, well-defined prompts — and understand why prompt quality directly shapes the outcome of your project. You will gain hands-on experience using AI tools to organize your requirements, iterate on your design, and debug errors systematically rather than by guesswork. You will also critically reflect on the capabilities and limitations of AI coding tools, and discuss their responsible use in engineering practice.",
     },
     {
       title: "Module 3: Deep learning for computer vision",

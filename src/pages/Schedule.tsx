@@ -58,13 +58,13 @@ export default function Schedule() {
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">5</td>
                 <td className="px-4 py-3 w-1/2">Code Structure and debug</td>
-                <td className="px-4 py-3 w-1/2">Debug with copilot</td>
+                <td className="px-4 py-3 w-1/2">Build, iterate and debug</td>
               </tr>
               {/* Week 6 */}
               <tr className="border-t bg-white">
                 <td className="px-4 py-3 w-16">6</td>
                 <td className="px-4 py-3 w-1/2">Advanced topics in embodied AI</td>
-                <td className="px-4 py-3 w-1/2">Cross-project integration</td>
+                <td className="px-4 py-3 w-1/2">Integration and Completion</td>
               </tr>
 
               {/* Module 3 Header */}
@@ -94,7 +94,7 @@ export default function Schedule() {
 
               {/* Module 4 Header */}
               <tr className="bg-slate-100 border-t border-slate-200">
-                <td colSpan="3" className="px-4 py-3 font-bold text-slate-900">
+                <td colSpan={3} className="px-4 py-3 font-bold text-slate-900">
                   Module 4: Fundamentals in NLP, LLM and RAG
                 </td>
               </tr>
