@@ -45,7 +45,7 @@ export default function Schedule() {
               {/* Module 2 Header */}
               <tr className="bg-slate-100 border-t border-slate-200">
                 <td colSpan="3" className="px-4 py-3 font-bold text-slate-900">
-                  Module 2: Vibe coding for robotics
+                  Module 2: Vibe coding from design to deployment
                 </td>
               </tr>
               {/* Week 4 */}

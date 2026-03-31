@@ -17,7 +17,7 @@ export default function Readings() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-3">Suggested Readings</h2>
+            <h2 className="text-2xl font-semibold mb-3">Further Readings (for You to Explore More)</h2>
             <ul className="list-disc list-inside space-y-2 text-slate-700">
               <li>
                 <strong>Paper:</strong> <a href="https://arxiv.org/pdf/1706.03762" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Attention Is All You Need</a><br />

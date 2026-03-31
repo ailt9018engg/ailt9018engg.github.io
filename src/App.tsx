@@ -5,6 +5,7 @@ import { Section } from './components/Section.tsx';
 import { ModulesAccordion } from './components/ModulesAccordion.tsx';
 import { LecturersAndTAs } from './components/LecturersAndTAs.tsx';
 import { UserIcon, MailIcon, TeacherIcon, CreditIcon, PrerequisiteIcon, QuotaIcon, GradingIcon, CheckCircleIcon } from './components/Icons.tsx';
+import './App.css';
 
 const Hero = () => (
     <div className="relative h-screen flex items-center justify-center text-center bg-white overflow-hidden">
@@ -86,6 +87,159 @@ export default function App() {
             </div>
         </div>
 
+        <Section id="details" title="Course Details">
+            <div className="flex flex-col md:flex-row gap-12 md:divide-x md:divide-slate-300">
+                <div className="flex-1 md:pr-6">
+                    <h3 className="text-2xl font-semibold text-slate-900 mb-4">Learning Hours</h3>
+                    <ul className="space-y-2">
+                        {Object.entries(courseData.learningHours).map(([key, value]) => (
+                            <li key={key} className="flex justify-between border-b border-slate-200 py-2">
+                                <span className="capitalize">{key}</span>
+                                <span className="font-medium text-slate-800">{value} hours</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="flex-1 md:pl-6">
+                    <h3 className="text-2xl font-semibold text-slate-900 mb-4">Assessment Methods</h3>
+                    <div className="space-y-4">
+                        <div>
+                            <h4 className="font-bold text-xl text-slate-800">Participation ({courseData.assessmentMethods.participation.weight})</h4>
+                            <ul className="list-disc list-inside text-slate-600">
+                                {courseData.assessmentMethods.participation.details.map((detail, i) => <li key={i}>{detail}</li>)}
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 className="font-bold text-xl text-slate-800">Individual Project ({courseData.assessmentMethods.individualProject.weight})</h4>
+                            <p className="text-slate-600">{courseData.assessmentMethods.individualProject.details}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <Section id="modules" title="Course Content & Topics">
+            <ModulesAccordion />
+            <div className="mt-8 p-6 bg-slate-100 rounded-lg border border-slate-200">
+                <h3 className="font-bold text-xl text-slate-800 mb-2">Summary</h3>
+                {courseData.summary.split('\n\n').map((paragraph, i) => (
+                    <p key={i} className="mb-4 last:mb-0" dangerouslySetInnerHTML={{ __html: paragraph }} />
+                ))}
+            </div>
+
+            <div className="mt-10">
+                <h3 className="text-2xl font-semibold text-slate-900 mb-4">Subclass-Module Allocation</h3>
+                <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+                    <img
+                        src="/images/Enrollment Comic.png"
+                        alt="4-panel course enrollment comic"
+                        className="w-full h-auto max-h-[640px] object-contain"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+
+            <div className="mt-10">
+                <div className="table-wrapper overflow-x-auto">
+                    <table>
+                        <thead>
+                            <tr className="title-row">
+                                <td colSpan={13}>Module–Subclass Allocation for AILT9018</td>
+                            </tr>
+                            <tr>
+                                <td className="label-col" style={{ height: '60px' }}>Subclass</td>
+                                <td colSpan={3} className="mod1-hdr">Module 1<span className="mod-name">Reading and Writing<br />with AI Assistance</span></td>
+                                <td colSpan={3} className="mod2-hdr">Module 2<span className="mod-name">Vibe Coding from<br />Design to Deployment</span></td>
+                                <td colSpan={3} className="mod3-hdr">Module 3<span className="mod-name">Deep Learning for<br />Computer Vision</span></td>
+                                <td colSpan={3} className="mod4-hdr">Module 4<span className="mod-name">Fundamentals in<br />NLP, LLM and RAG</span></td>
+                            </tr>
+                            <tr>
+                                <td className="label-col">Weeks</td>
+                                <td className="week-mod1">Week 1</td><td className="week-mod1">Week 2</td><td className="week-mod1">Week 3</td>
+                                <td className="week-mod2">Week 4</td><td className="week-mod2">Week 5</td><td className="week-mod2">Week 6</td>
+                                <td className="week-mod3">Week 7</td><td className="week-mod3">Week 8</td><td className="week-mod3">Week 9</td>
+                                <td className="week-mod4">Week 10</td><td className="week-mod4">Week 11</td><td className="week-mod4">Week 12</td>
+                            </tr>
+                            <tr>
+                                <td className="per-week-label">Per week</td>
+                                <td className="per-week-mod1">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                                <td className="per-week-mod1">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                                <td className="per-week-mod1">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                                <td className="per-week-mod2">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                                <td className="per-week-mod2">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                                <td className="per-week-mod2">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                                <td className="per-week-mod3">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                                <td className="per-week-mod3">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                                <td className="per-week-mod3">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                                <td className="per-week-mod4">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                                <td className="per-week-mod4">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                                <td className="per-week-mod4">Lecture (2hrs)<br />+<br />Tutorial (2hrs)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td className="sc-label">Subclass A<br /><span className="quota-tag">(Quota: 20)</span></td>
+                                <td colSpan={3} className="chk1">✓</td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="chk3">✓</td>
+                                <td colSpan={3} className="dash3">—</td>
+                            </tr>
+                            <tr>
+                                <td className="sc-label">Subclass B<br /><span className="quota-tag">(Quota: 20)</span></td>
+                                <td colSpan={3} className="chk1">✓</td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="chk3">✓</td>
+                                <td colSpan={3} className="dash3">—</td>
+                            </tr>
+                            <tr>
+                                <td className="sc-label">Subclass C<br /><span className="quota-tag">(Quota: 20)</span></td>
+                                <td colSpan={3} className="chk1">✓</td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="chk4">✓</td>
+                            </tr>
+                            <tr>
+                                <td className="sc-label">Subclass D<br /><span className="quota-tag">(Quota: 20)</span></td>
+                                <td colSpan={3} className="chk1">✓</td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="chk4">✓</td>
+                            </tr>
+                            <tr>
+                                <td className="sc-label">Subclass E<br /><span className="quota-tag">(Quota: 20)</span></td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="chk2">✓</td>
+                                <td colSpan={3} className="chk3">✓</td>
+                                <td colSpan={3} className="dash3">—</td>
+                            </tr>
+                            <tr>
+                                <td className="sc-label">Subclass F<br /><span className="quota-tag">(Quota: 20)</span></td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="chk2">✓</td>
+                                <td colSpan={3} className="chk3">✓</td>
+                                <td colSpan={3} className="dash3">—</td>
+                            </tr>
+                            <tr>
+                                <td className="sc-label">Subclass G<br /><span className="quota-tag">(Quota: 20)</span></td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="chk2">✓</td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="chk4">✓</td>
+                            </tr>
+                            <tr>
+                                <td className="sc-label">Subclass H<br /><span className="quota-tag">(Quota: 20)</span></td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="chk2">✓</td>
+                                <td colSpan={3} className="dash3">—</td>
+                                <td colSpan={3} className="chk4">✓</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </Section>
+
                 <Section id="message" title="Message to Students">
                     <div className="bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 border border-purple-100 rounded-xl p-6 md:p-8 shadow-md mb-8">
                         <ul className="space-y-4">
@@ -143,47 +297,6 @@ export default function App() {
                 ))}
             </ul>
         </Section> */}
-
-        <Section id="details" title="Course Details">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
-                    <h3 className="text-2xl font-semibold text-slate-900 mb-4">Learning Hours</h3>
-                    <ul className="space-y-2">
-                        {Object.entries(courseData.learningHours).map(([key, value]) => (
-                            <li key={key} className="flex justify-between border-b border-slate-200 py-2">
-                                <span className="capitalize">{key}</span>
-                                <span className="font-medium text-slate-800">{value} hours</span>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div>
-                    <h3 className="text-2xl font-semibold text-slate-900 mb-4">Assessment Methods</h3>
-                    <div className="space-y-4">
-                        <div>
-                            <h4 className="font-bold text-xl text-slate-800">Participation ({courseData.assessmentMethods.participation.weight})</h4>
-                            <ul className="list-disc list-inside text-slate-600">
-                                {courseData.assessmentMethods.participation.details.map((detail, i) => <li key={i}>{detail}</li>)}
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-bold text-xl text-slate-800">Individual Project ({courseData.assessmentMethods.individualProject.weight})</h4>
-                            <p className="text-slate-600">{courseData.assessmentMethods.individualProject.details}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </Section>
-
-        <Section id="modules" title="Course Content & Topics">
-            <ModulesAccordion />
-            <div className="mt-8 p-6 bg-slate-100 rounded-lg border border-slate-200">
-                <h3 className="font-bold text-xl text-slate-800 mb-2">Summary</h3>
-                {courseData.summary.split('\n\n').map((paragraph, i) => (
-                    <p key={i} className="mb-4 last:mb-0" dangerouslySetInnerHTML={{ __html: paragraph }} />
-                ))}
-            </div>
-        </Section>
 
         <Section id="rubrics" title="Assessment Rubrics">
             <div className="space-y-12">

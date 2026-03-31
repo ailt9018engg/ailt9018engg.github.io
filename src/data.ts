@@ -183,7 +183,7 @@ export const courseData: CourseData = {
         "After attending this module, you will understand how to effectively read, analyze, and write technical content using AI tools. You will gain practical experience in using large language models (LLMs) for summarizing, comparing, and querying engineering documents, as well as explore prompt engineering techniques to improve accuracy and control outputs. You will learn the underlying mechanisms and limitations of LLMs, address issues such as hallucination and context limits, and discuss ethical use in academic and professional settings.",
     },
     {
-      title: "Module 2: Vibe coding for robotics",
+      title: "Module 2: Vibe coding from design to deployment",
       description:
         "This module introduces 'vibe coding' for robotics, focusing on intuitive and rapid prototyping. Students will learn to translate high-level concepts and intentions into functional robotic behaviors, leveraging modern programming paradigms and simulation tools. The emphasis is on creative problem-solving and developing a feel for robotic interaction, enabling students to quickly build and test ideas in a dynamic environment.",
     },
