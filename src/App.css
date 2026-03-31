@@ -23,5 +23,23 @@
 .chk3 { background: #45963d; color: white; font-size: 17px; font-weight: bold; }
 .chk4 { background: #8046a8; color: white; font-size: 17px; font-weight: bold; }
 .dash3 { background: #f5f7f9; color: #aaa; font-size: 14px; }
-.table-wrapper td { height: 26px; }
-.quota-tag { font-weight: 400; font-size: 10.5px; color: #888; }
+.table-wrapper td {
+  height: 26px;
+}
+.table-wrapper tbody td {
+  border-bottom: 2px solid #1e2d3d;
+}
+.quota-tag {
+  font-weight: 400;
+  font-size: 10.5px;
+  color: #888;
+}
+.sc-label {
+  background: #e8ecf0;
+  font-weight: 600;
+  color: #222;
+  padding: 4px 10px;
+  height: 26px;
+  font-size: 11.5px;
+  border-bottom: 2px solid #1e2d3d; 
+}

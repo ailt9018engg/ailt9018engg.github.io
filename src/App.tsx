@@ -128,11 +128,11 @@ export default function App() {
             </div>
 
             <div className="mt-10">
-                <h3 className="text-2xl font-semibold text-slate-900 mb-4">Subclass-Module Allocation</h3>
+                <h3 className="text-2xl font-semibold text-slate-900 mb-4">Subclass Selection</h3>
                 <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
                     <img
-                        src="/images/Enrollment Comic.png"
-                        alt="4-panel course enrollment comic"
+                        src="/images/Subclass Selection Comic.png"
+                        alt="4-panel subclass selection comic"
                         className="w-full h-auto max-h-[640px] object-contain"
                         loading="lazy"
                     />
@@ -144,7 +144,7 @@ export default function App() {
                     <table>
                         <thead>
                             <tr className="title-row">
-                                <td colSpan={13}>Module–Subclass Allocation for AILT9018</td>
+                                <td colSpan={13}>Module–Subclass Table</td>
                             </tr>
                             <tr>
                                 <td className="label-col" style={{ height: '60px' }}>Subclass</td>
