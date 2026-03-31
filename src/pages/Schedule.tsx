@@ -19,7 +19,7 @@ export default function Schedule() {
             <tbody>
               {/* Module 1 Header */}
               <tr className="bg-slate-100 border-t border-slate-200">
-                <td colSpan="3" className="px-4 py-3 font-bold text-slate-900">
+                <td colSpan={3} className="px-4 py-3 font-bold text-slate-900">
                   Module 1: Reading and writing with AI assistance
                 </td>
               </tr>
@@ -69,7 +69,7 @@ export default function Schedule() {
 
               {/* Module 3 Header */}
               <tr className="bg-slate-100 border-t border-slate-200">
-                <td colSpan="3" className="px-4 py-3 font-bold text-slate-900">
+                <td colSpan={3} className="px-4 py-3 font-bold text-slate-900">
                   Module 3: Deep learning for computer vision
                 </td>
               </tr>
