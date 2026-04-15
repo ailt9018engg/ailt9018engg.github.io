@@ -43,3 +43,37 @@
   font-size: 11.5px;
   border-bottom: 2px solid #1e2d3d; 
 }
+
+.subclass-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; background: #faf9f6; border-radius: 0.75rem; overflow: hidden; }
+
+.subclass-table th { background: #f3f0ec; font-weight: 600; padding: 0.85rem 1.1rem; text-align: left; border-bottom: 2px solid #d4d1ca; color: #5a5955; font-size: 0.82rem; letter-spacing: 0.02em; }
+
+.subclass-table td { padding: 0.85rem 1.1rem; border-bottom: 1px solid #e8e5e0; vertical-align: middle; color: #28251d; }
+
+.subclass-table tr:last-child td { border-bottom: none; }
+
+.subclass-table tr:hover td { background: #f5f3ef; }
+
+.subclass-table td:first-child { font-weight: 700; font-size: 1.1rem; width: 80px; color: #28251d; }
+
+.mod-badge { display: inline-flex; align-items: center; font-size: 0.78rem; font-weight: 600; padding: 0.28rem 0.75rem; border-radius: 9999px; white-space: nowrap; }
+
+.badge-m1 { background: #d6e8e4; color: #0a5e63; }
+
+.badge-m2 { background: #ede0b8; color: #8a6800; }
+
+.badge-m3 { background: #c8d9e8; color: #00527a; }
+
+.badge-m4 { background: #cfe0c8; color: #3a6b1d; }
+
+.subclass-table .details-link { font-size: 0.82rem; color: #01696f; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+
+.subclass-table .details-link:hover { color: #0c4e54; }
+
+.subclass-table td:first-child { border-right: 1px solid #d4d1ca; text-align: center; vertical-align: middle; }
+
+.subclass-table th:first-child { border-right: 1px solid #d4d1ca; text-align: center; }
+
+.subclass-table td:nth-child(3) { border-right: 1px solid #d4d1ca; }
+
+.subclass-table th:last-child { border-left: 1px solid #d4d1ca; }

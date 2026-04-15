@@ -129,6 +129,65 @@ export default function App() {
 
             <div className="mt-10">
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4">Subclass Selection</h3>
+                <table className="subclass-table">
+  <thead>
+    <tr>
+      <th>Subclass</th>
+      <th colSpan="2">Modules to take</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td><span className="mod-badge badge-m1">Reading and Writing with AI Assistance</span></td>
+      <td><span className="mod-badge badge-m3">Deep Learning for Computer Vision</span></td>
+      <td><a href="#" className="details-link">Schedule &amp; venue →</a></td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td><span className="mod-badge badge-m1">Reading and Writing with AI Assistance</span></td>
+      <td><span className="mod-badge badge-m3">Deep Learning for Computer Vision</span></td>
+      <td><a href="#" className="details-link">Schedule &amp; venue →</a></td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td><span className="mod-badge badge-m1">Reading and Writing with AI Assistance</span></td>
+      <td><span className="mod-badge badge-m4">Fundamentals in NLP, LLM and RAG</span></td>
+      <td><a href="#" className="details-link">Schedule &amp; venue →</a></td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td><span className="mod-badge badge-m1">Reading and Writing with AI Assistance</span></td>
+      <td><span className="mod-badge badge-m4">Fundamentals in NLP, LLM and RAG</span></td>
+      <td><a href="#" className="details-link">Schedule &amp; venue →</a></td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td><span className="mod-badge badge-m2">Vibe Coding from Design to Deployment</span></td>
+      <td><span className="mod-badge badge-m3">Deep Learning for Computer Vision</span></td>
+      <td><a href="#" className="details-link">Schedule &amp; venue →</a></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td><span className="mod-badge badge-m2">Vibe Coding from Design to Deployment</span></td>
+      <td><span className="mod-badge badge-m3">Deep Learning for Computer Vision</span></td>
+      <td><a href="#" className="details-link">Schedule &amp; venue →</a></td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td><span className="mod-badge badge-m2">Vibe Coding from Design to Deployment</span></td>
+      <td><span className="mod-badge badge-m4">Fundamentals in NLP, LLM and RAG</span></td>
+      <td><a href="#" className="details-link">Schedule &amp; venue →</a></td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td><span className="mod-badge badge-m2">Vibe Coding from Design to Deployment</span></td>
+      <td><span className="mod-badge badge-m4">Fundamentals in NLP, LLM and RAG</span></td>
+      <td><a href="#" className="details-link">Schedule &amp; venue →</a></td>
+    </tr>
+  </tbody>
+</table>
                 <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
                     <img
                         src="/images/Subclass Selection Comic.png"
