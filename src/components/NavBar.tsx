@@ -26,16 +26,23 @@ export default function NavBar({ current, onNavigate }: NavProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
-            <a
-              href="/"
-              onClick={(e) => {
-                e.preventDefault();
-                onNavigate('/');
-              }}
-              className="text-lg font-bold text-slate-800"
-            >
-              AILT9018
-            </a>
+            <div className="flex items-center gap-14">
+              <img
+                src="/images/HKU Engineering Logo Large.png"
+                alt="HKU Faculty of Engineering"
+                style={{ height: '36px', width: 'auto', marginLeft: '-40px' }}
+              />
+              <a
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('/');
+                }}
+                className="text-lg font-bold text-slate-800"
+              >
+                AILT9018
+              </a>
+            </div>
             <nav className="hidden md:flex items-center space-x-2">
               {link('/', 'Home')}
               {link('/schedule', 'Subclass & Module Details')}
@@ -45,7 +52,7 @@ export default function NavBar({ current, onNavigate }: NavProps) {
           </div>
           <div className="hidden md:flex items-center">
             <a
-              href={`https://ailt9018engg.github.io`}
+              href={`https://ailt9018.engg.hku.hk`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-slate-600 hover:text-purple-600"

@@ -200,7 +200,7 @@ export const courseData: CourseData = {
   ],
   summary:
     "Modules 1 and 2 focus on the application. After attending either module, the students will gain good understanding of how Artificial Intelligence (AI) tools can be useful for engineering applications (CLO1) and elevated awareness of the limitations of the AI tools (CLO3). \n\nModules 3 and 4 focus on the implementation. After attending either module, the students will gain a deeper understanding of how AI and specifically the artificial neural networks work in a nutshell. They will be able to apply the relevant AI technologies to their field of study with reasonable judgements (CLO2). Their knowledge and awareness of advantages and limitations of AI will be elevated. (CLO3)\n\n<strong>Students shall select two modules for this course: one from modules 1 and 2, and one from modules 3 and 4.</strong> For more details, please visit <a href=\"#/schedule\" class=\"text-blue-600 underline\">here</a>.\n",
-  courseWebsite: "ailt9018engg.github.io",
+  courseWebsite: "ailt9018.engg.hku.hk",
   lecturers: [
     { name: "Dr. Lei YANG", photoPath: "/images/lei.png" },
     { name: "Dr. Kevin WU", photoPath: "/images/kevin.png" },
