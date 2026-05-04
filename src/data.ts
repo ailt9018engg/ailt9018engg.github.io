@@ -178,28 +178,24 @@ export const courseData: CourseData = {
   },
   modules: [
     {
-      title: "Module 1: Reading and writing with AI assistance",
-      description:
-        "After attending this module, you will understand how to effectively read, analyze, and write technical content using AI tools. You will gain practical experience in using large language models (LLMs) for summarizing, comparing, and querying engineering documents, as well as explore prompt engineering techniques to improve accuracy and control outputs. You will learn the underlying mechanisms and limitations of LLMs, address issues such as hallucination and context limits, and discuss ethical use in academic and professional settings.",
-    },
-    {
-      title: "Module 2: Vibe coding from design to deployment",
-      description:
-        "After attending this module, you will be able to design, build, and complete an engineering project using AI coding tools. You will learn how to translate your ideas into structured, well-defined prompts — and understand why prompt quality directly shapes the outcome of your project. You will gain hands-on experience using AI tools to organize your requirements, iterate on your design, and debug errors systematically rather than by guesswork. You will also critically reflect on the capabilities and limitations of AI coding tools, and discuss their responsible use in engineering practice.",
-    },
-    {
-      title: "Module 3: Deep learning for computer vision",
+      title: "Module 1: Deep Learning for Computer Vision",
       description:
         "After attending this module, you will be able to understand how convolutional neural networks (CNN) work and gain practical experience in training a CNN to detect objects. You will also gain exposure to recent advances in computer vision and their applications in the engineering domains. You will be able to propose an AI-empowered solution based on computer vision technologies for your field of study.",
     },
     {
-      title: "Module 4: Fundamentals in NLP, LLM and RAG",
+      title: "Module 2: Fundamentals in NLP, LLM and RAG",
       description:
         "After attending this module, you will understand the core principles behind Natural Language Processing (NLP), Large Language Models (LLMs), and Retrieval-Augmented Generation (RAG). You will learn how modern language models process text, retrieve information, and generate responses. Through practical tutorials, you will build simple chatbots, integrate LLMs via APIs, and implement RAG pipelines. You will also explore advanced concepts to improve RAG. By the end of this module, you will be able to design AI-empowered solutions for engineering applications.",
     },
+    {
+      title: "Module 3: AI as Professional Assistant",
+      description:
+        "After attending this module, you will be able to use AI tools to read and analyse technical documents, engineering papers, and patents, and communicate your findings clearly and efficiently. You will also gain hands-on experience using AI coding assistants such as GitHub Copilot to design, build, and deploy your own software projects. By the end of this module, you will be equipped to use AI confidently as a versatile professional tool across all areas of your engineering career.",
+    },
+
   ],
   summary:
-    "Modules 1 and 2 focus on the application. After attending either module, the students will gain good understanding of how Artificial Intelligence (AI) tools can be useful for engineering applications (CLO1) and elevated awareness of the limitations of the AI tools (CLO3). \n\nModules 3 and 4 focus on the implementation. After attending either module, the students will gain a deeper understanding of how AI and specifically the artificial neural networks work in a nutshell. They will be able to apply the relevant AI technologies to their field of study with reasonable judgements (CLO2). Their knowledge and awareness of advantages and limitations of AI will be elevated. (CLO3)\n\n<strong>Students shall select two modules for this course: one from modules 1 and 2, and one from modules 3 and 4.</strong> For more details, please visit <a href=\"#/schedule\" class=\"text-blue-600 underline\">here</a>.\n",
+    "AILT9018 is structured around three modules, each targeting a distinct area of AI application in engineering. Module 1 (Deep Learning for Computer Vision) trains students to build and deploy YOLO-based object detection models for real engineering tasks. Module 2 (Fundamentals in NLP, LLM and RAG) guides students through the principles of large language models and retrieval-augmented generation, culminating in building a domain-specific AI chatbot. Module 3 (AI as Professional Assistant) develops practical AI fluency — from reading and analysing technical documents with AI assistance, to designing and deploying software projects using AI coding tools like GitHub Copilot. Together, the three modules give students hands-on experience with the AI technologies most relevant to modern engineering practice.",
   courseWebsite: "ailt9018.engg.hku.hk",
   lecturers: [
     { name: "Dr. Lei YANG", photoPath: "/images/lei.png" },
@@ -211,3 +207,4 @@ export const courseData: CourseData = {
     { name: "Mr. Joe CHAN", photoPath: "/images/Joe.png" },
   ],
 };
+

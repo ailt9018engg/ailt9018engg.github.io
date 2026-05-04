@@ -54,21 +54,42 @@
 
 .subclass-table tr:hover td { background: #f5f3ef; }
 
+/* New: indicate rows are clickable */
+.subclass-table tbody tr.clickable-row { cursor: pointer; }
+
 .subclass-table td:first-child { font-weight: 700; font-size: 1.1rem; width: 80px; color: #28251d; }
 
 .mod-badge { display: inline-flex; align-items: center; font-size: 0.78rem; font-weight: 600; padding: 0.28rem 0.75rem; border-radius: 9999px; white-space: nowrap; }
 
-.badge-m1 { background: #d6e8e4; color: #0a5e63; }
+.badge-m1 { background-color: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; }
 
-.badge-m2 { background: #ede0b8; color: #8a6800; }
+.badge-m2 { background-color: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; }
 
-.badge-m3 { background: #c8d9e8; color: #00527a; }
+.badge-m3 { background-color: #ede9fe; color: #5b21b6; border: 1px solid #ddd6fe; }
 
 .badge-m4 { background: #cfe0c8; color: #3a6b1d; }
 
 .subclass-table .details-link { font-size: 0.82rem; color: #01696f; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
 
 .subclass-table .details-link:hover { color: #0c4e54; }
+
+/* Module cards on Subclass & Module Details page - stacked horizontal strips */
+.module-cards { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.module-card { display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1rem; border-radius: 0.5rem; border: 1px solid #e6e6e6; background: #ffffff; min-height: 64px; }
+.module-accent { width: 8px; height: 100%; border-radius: 4px; flex-shrink: 0; }
+.module-content { flex: 1; }
+.module-title { font-weight: 700; font-size: 1.25rem; color: #111827; margin: 0 0 0.25rem 0; }
+.module-desc { margin: 0; color: #374151; font-size: 1.125rem; }
+
+.module-summary .summary-body { font-size: 0.875rem; color: #374151; }
+
+/* color variants using same values as badge classes */
+.module-card.m1 .module-accent { background-color: #dbeafe; border: 1px solid #bfdbfe; }
+.module-card.m1 .module-title { color: #1e40af; }
+.module-card.m2 .module-accent { background-color: #d1fae5; border: 1px solid #a7f3d0; }
+.module-card.m2 .module-title { color: #065f46; }
+.module-card.m3 .module-accent { background-color: #ede9fe; border: 1px solid #ddd6fe; }
+.module-card.m3 .module-title { color: #5b21b6; }
 
 .subclass-table td:first-child { border-right: 1px solid #d4d1ca; text-align: center; vertical-align: middle; }
 

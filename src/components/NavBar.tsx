@@ -43,6 +43,7 @@ export default function NavBar({ current, onNavigate }: NavProps) {
               {link('/schedule', 'Subclass & Module Details')}
               {link('/readings', 'Readings')}
               {link('/contact', 'About Us')}
+              {link('/course-details', 'Course Details')}
             </nav>
           </div>
 
@@ -83,6 +84,7 @@ export default function NavBar({ current, onNavigate }: NavProps) {
           {link('/schedule', 'Subclass & Module Details', true)}
           {link('/readings', 'Readings', true)}
           {link('/contact', 'About Us', true)}
+          {link('/course-details', 'Course Details', true)}
           <a
             href="https://ailt9018.engg.hku.hk"
             target="_blank"

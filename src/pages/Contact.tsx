@@ -1,11 +1,12 @@
 import React from 'react';
 import { courseData } from '../data.ts';
+import { LecturersAndTAs } from '../components/LecturersAndTAs.tsx';
+import { Section } from '../components/Section.tsx';
 
 export default function Contact() {
   return (
     <div className="text-slate-800 antialiased min-h-screen bg-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-3xl font-bold mb-4">Contact</h1>
+      <Section id="Contact" title="Contact">
         <p className="mb-6 text-slate-600">For course inquiries and administrative matters, please use the contacts below.</p>
 
         <div className="bg-slate-50 p-6 rounded-lg border border-slate-200">
@@ -18,7 +19,10 @@ export default function Contact() {
             <a className="text-purple-600 hover:underline" href={`mailto:${courseData.inquiries}`}>{courseData.inquiries}</a>
           </div>
         </div>
-      </div>
+      </Section>
+
+      <LecturersAndTAs />
+
     </div>
   );
 }
