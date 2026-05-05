@@ -60,15 +60,27 @@ export default function Schedule() {
 
   return (
     <div className="text-slate-800 antialiased min-h-screen bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-12">
 
         {selectedSub && (
-          <div className="mb-6">
+          <div className="pt-12 mb-6 flex flex-col items-start gap-2">
             <button
               className="text-sm text-slate-700 underline"
               onClick={() => { window.location.hash = 'subclass-module-details'; }}
             >
               ← View all subclasses
+            </button>
+            <button
+              className="text-sm text-slate-700 underline"
+              onClick={() => {
+                window.location.hash = '/';
+                setTimeout(() => {
+                  const el = document.getElementById('subclass-selection');
+                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 120);
+              }}
+            >
+              ← Back to Table
             </button>
           </div>
         )}

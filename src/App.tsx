@@ -102,7 +102,7 @@ export default function App() {
         </Section>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-<div className="mt-10">
+<div id="subclass-selection" className="mt-10">
     <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-10">
       <span className="bg-gradient-to-r from-cyan-500 to-purple-600 text-transparent bg-clip-text">
         Subclass Selection
