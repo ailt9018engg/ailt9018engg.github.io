@@ -5,6 +5,7 @@ const typeColors: Record<string, string> = {
   Video: 'bg-red-50 text-red-700 border-red-200',
   Article: 'bg-green-50 text-green-700 border-green-200',
   Book: 'bg-amber-50 text-amber-700 border-amber-200',
+  Course: 'bg-teal-50 text-teal-700 border-teal-200',
 };
 
 type ReadItem = {
@@ -15,7 +16,6 @@ type ReadItem = {
   module?: 'module1' | 'module2' | 'module3' | 'general';
 };
 
-// Further readings (content unchanged). Added `module` metadata to support filtering.
 const furtherReadings: ReadItem[] = [
   { type: 'Paper', href: 'https://arxiv.org/pdf/1706.03762', title: 'Attention Is All You Need', desc: 'Introduces the Transformer architecture, foundational for understanding RAG, Agentic AI, and modern LLMs covered in the course.', module: 'module2' },
   { type: 'Video', href: 'https://www.youtube.com/watch?v=eMlx5fFNoYc', title: '3Blue1Brown – "Attention in transformers, visually explained"', desc: 'Intuitive visual explanation of transformer architecture.', module: 'module2' },
@@ -32,21 +32,23 @@ const furtherReadings: ReadItem[] = [
   { type: 'Article', href: 'https://www.vincentsitzmann.com/blog/bitter_lesson_of_cv/', title: 'The Flavor of the Bitter Lesson for Computer Vision – Vincent Sitzmann', desc: 'Extends the Bitter Lesson to CV, arguing that hand-crafted intermediate representations will be replaced by end-to-end perception-action pipelines.', module: 'module1' },
   { type: 'Article', href: 'https://www.vincentsitzmann.com/blog/on_research/', title: 'Make It Work, Then Prove It Works – Vincent Sitzmann', desc: 'A two-mode research framework—rapid prototyping then rigorous ablation—to help AI researchers avoid wasting time on invalid hypotheses.', module: 'general' },
   { type: 'Article', href: 'https://www.vizuaranewsletter.com/p/vision-transformers?r=5b5pyd&utm_campaign=post&utm_medium=web', title: 'Vision Transformers – Vizuara AI Newsletter', desc: 'Technical walkthrough of ViT covering patch embeddings, self-attention vs. CNN receptive fields, and hands-on fine-tuning on the Oxford-IIIT Pet dataset.', module: 'module1' },
-  { type: 'Article', href: 'https://ergosphere.blog/posts/the-machines-are-fine/', title: 'The Machines Are Fine. I\'m Worried About Us.', desc: 'An astrophysicist argues that AI agents don\'t threaten science—but bypassing the struggle of learning does, using the parable of two PhD students to show that outsourcing thinking to LLMs produces papers without understanding.', module: 'general' },
+  { type: 'Article', href: 'https://ergosphere.blog/posts/the-machines-are-fine/', title: "The Machines Are Fine. I'm Worried About Us.", desc: "An astrophysicist argues that AI agents don't threaten science—but bypassing the struggle of learning does, using the parable of two PhD students to show that outsourcing thinking to LLMs produces papers without understanding.", module: 'general' },
   { type: 'Article', href: 'https://www.linkedin.com/pulse/ai-data-centres-what-means-civil-engineers-damir-pervan-u3iwf/', title: 'AI Data Centres: What It Means for Civil Engineers', desc: 'Civil engineer Damir Pervan explores how the AI data centre construction boom is reshaping civil engineering demands—covering structural load requirements, site selection, power infrastructure, and the growing need for civils to collaborate with mechanical and electrical teams.', module: 'general' },
   { type: 'Video', href: 'https://www.youtube.com/watch?v=EdZWPB1fIJc', title: 'Should You Learn Coding Now? Anthropic CEO Explains', desc: 'Anthropic CEO Dario Amodei argues that while AI will handle routine coding first, foundational programming skills remain valuable—advising learners to pair basic coding knowledge with AI tool fluency, prompting, and systems thinking for the AI era.', module: 'general' },
-
-  { type: 'Paper', href: 'https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1697169/full', title: 'MechRAG: A Multimodal LLM for Mechanical Engineering', desc: 'Integrates CAD/CAE digital assets into a conversational interface, letting engineers query complex numerical data using natural language.', module: 'module3' },
-  { type: 'Paper', href: 'https://arxiv.org/html/2508.04714v2', title: 'Prescriptive Agents Based on RAG for Automated Maintenance', desc: 'A RAG-powered agentic system that retrieves technical documentation to generate prescriptive maintenance action plans for industrial equipment.', module: 'module3' },
-  { type: 'Paper', href: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5172919', title: 'ChatCivic: A Domain-Specific LLM for Design Code Interpretation', desc: 'A RAG-enhanced LLM enabling engineers to query complex civil engineering design codes in natural language with high accuracy.', module: 'module3' },
-  { type: 'Paper', href: 'https://ieeexplore.ieee.org/document/10762118', title: 'Automated Smart City Planning through Personalized LLM with RAG', desc: 'Combines personalized LLMs with RAG to automate urban planning, generating infrastructure proposals aligned with city-specific regulations.', module: 'module3' },
-  { type: 'Paper', href: 'https://arxiv.org/pdf/2409.00494', title: 'GenAI-Powered Multi-Agent Paradigm for Smart Urban Mobility', desc: 'Proposes a multi-agent LLM and RAG architecture for intelligent transportation, covering traffic management, routing, and public transit coordination.', module: 'module3' },
-  { type: 'Paper', href: 'https://www.sciencedirect.com/science/article/abs/pii/S1474034625000515?via%3Dihub', title: 'RAG4CM: RAG-Driven Information Retrieval in Construction Management', desc: 'Parses project documents into hierarchical structures with user preference learning to bridge high-level queries and granular construction documentation.', module: 'module3' },
-  { type: 'Paper', href: 'https://www.mdpi.com/2079-9292/14/16/3314', title: 'A RAG Method for QA on Airworthiness Regulations', desc: 'A two-stage semantic retrieval and cross-encoder re-ranking pipeline for intelligent QA support in civil aviation airworthiness certification.', module: 'module3' },
-  { type: 'Article', href: 'https://developer.ibm.com/articles/agentic-rag-pipeline/', title: 'Building an Agentic RAG Pipeline – IBM Developer', desc: 'IBM demonstrates a multi-step agentic RAG pipeline for enterprise power supply discovery, showcasing practical deployment in industrial settings.', module: 'module3' },
-  { type: 'Paper', href: 'https://arxiv.org/html/2508.12682v1', title: 'GridCodex: A RAG-Driven AI Framework for Power Grid Code Reasoning', desc: 'Applies RAG to automate reasoning over power grid codes and compliance standards for real-time engineering support.', module: 'module3' },
-  { type: 'Paper', href: 'https://www.sciencedirect.com/science/article/pii/S147403462400658X', title: 'An Advanced RAG System for Manufacturing Quality Control', desc: 'Deploys RAG in smart manufacturing to retrieve defect records and generate LLM-driven root cause analyses on the production floor.', module: 'module3' },
-  { type: 'Paper', href: 'https://www.mdpi.com/2076-3417/14/20/9318', title: 'Evaluating RAG Models for Financial Report QA', desc: 'Uses MedRAG and KG-RAG to ground LLM responses in biomedical knowledge graphs, reducing hallucinations in clinical QA applications.', module: 'module3' },
+  { type: 'Course', href: 'https://cs231n.stanford.edu', title: 'Stanford CS231n: Deep Learning for Computer Vision', desc: "Stanford's flagship computer vision course covering deep learning architectures for image classification, object detection, and localization—including CNNs, backpropagation, transfer learning, and fine-tuning—with lecture videos and assignments freely available online.", module: 'module1' },
+  { type: 'Paper', href: 'https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1697169/full', title: 'MechRAG: A Multimodal LLM for Mechanical Engineering', desc: 'Integrates CAD/CAE digital assets into a conversational interface, letting engineers query complex numerical data using natural language.', module: 'module2' },
+  { type: 'Paper', href: 'https://arxiv.org/html/2508.04714v2', title: 'Prescriptive Agents Based on RAG for Automated Maintenance', desc: 'A RAG-powered agentic system that retrieves technical documentation to generate prescriptive maintenance action plans for industrial equipment.', module: 'module2' },
+  { type: 'Paper', href: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5172919', title: 'ChatCivic: A Domain-Specific LLM for Design Code Interpretation', desc: 'A RAG-enhanced LLM enabling engineers to query complex civil engineering design codes in natural language with high accuracy.', module: 'module2' },
+  { type: 'Paper', href: 'https://ieeexplore.ieee.org/document/10762118', title: 'Automated Smart City Planning through Personalized LLM with RAG', desc: 'Combines personalized LLMs with RAG to automate urban planning, generating infrastructure proposals aligned with city-specific regulations.', module: 'module2' },
+  { type: 'Paper', href: 'https://arxiv.org/pdf/2409.00494', title: 'GenAI-Powered Multi-Agent Paradigm for Smart Urban Mobility', desc: 'Proposes a multi-agent LLM and RAG architecture for intelligent transportation, covering traffic management, routing, and public transit coordination.', module: 'module2' },
+  { type: 'Paper', href: 'https://www.sciencedirect.com/science/article/abs/pii/S1474034625000515?via%3Dihub', title: 'RAG4CM: RAG-Driven Information Retrieval in Construction Management', desc: 'Parses project documents into hierarchical structures with user preference learning to bridge high-level queries and granular construction documentation.', module: 'module2' },
+  { type: 'Paper', href: 'https://www.mdpi.com/2079-9292/14/16/3314', title: 'A RAG Method for QA on Airworthiness Regulations', desc: 'A two-stage semantic retrieval and cross-encoder re-ranking pipeline for intelligent QA support in civil aviation airworthiness certification.', module: 'module2' },
+  { type: 'Article', href: 'https://developer.ibm.com/articles/agentic-rag-pipeline/', title: 'Building an Agentic RAG Pipeline – IBM Developer', desc: 'IBM demonstrates a multi-step agentic RAG pipeline for enterprise power supply discovery, showcasing practical deployment in industrial settings.', module: 'module2' },
+  { type: 'Paper', href: 'https://arxiv.org/html/2508.12682v1', title: 'GridCodex: A RAG-Driven AI Framework for Power Grid Code Reasoning', desc: 'Applies RAG to automate reasoning over power grid codes and compliance standards for real-time engineering support.', module: 'module2' },
+  { type: 'Paper', href: 'https://www.sciencedirect.com/science/article/pii/S147403462400658X', title: 'An Advanced RAG System for Manufacturing Quality Control', desc: 'Deploys RAG in smart manufacturing to retrieve defect records and generate LLM-driven root cause analyses on the production floor.', module: 'module2' },
+  { type: 'Paper', href: 'https://www.mdpi.com/2076-3417/14/20/9318', title: 'Evaluating RAG Models for Financial Report QA', desc: 'Uses MedRAG and KG-RAG to ground LLM responses in biomedical knowledge graphs, reducing hallucinations in clinical QA applications.', module: 'module2' },
+  { type: 'Course', href: 'https://cs336.stanford.edu', title: 'Stanford CS336: Language Modeling from Scratch', desc: "Stanford's graduate course by Percy Liang and Tatsunori Hashimoto walks students through building a language model entirely from scratch—covering tokenization, Transformer architecture, distributed training, scaling laws, and data pipelines—making it one of the most rigorous publicly available resources for understanding how LLMs are built.", module: 'module2' },
+  { type: 'Paper', href: 'https://arxiv.org/abs/2307.03172', title: 'Lost in the Middle: How Language Models Use Long Contexts', desc: 'Liu et al. (Stanford, 2023) show that LLM performance degrades significantly when relevant information is buried in the middle of long input contexts—with direct implications for RAG system design and document retrieval strategies.', module: 'module2' },
 ];
 
 const moduleLabels: Record<string, string> = {
@@ -56,12 +58,12 @@ const moduleLabels: Record<string, string> = {
   general: 'General',
 };
 
-const typeOptions = ['All Types', 'Paper', 'Article', 'Video', 'Book'];
+const typeOptions = ['All Types', 'Paper', 'Article', 'Video', 'Book', 'Course'];
 const moduleOptions = [
   { key: 'all', label: 'All' },
-  { key: 'module1', label: 'Module 1: Deep Learning for Computer Vision' },
-  { key: 'module2', label: 'Module 2: Fundamentals in NLP, LLM and RAG' },
-  { key: 'module3', label: 'Module 3: AI as Professional Assistant' },
+  { key: 'module1', label: 'Computer Vision' },
+  { key: 'module2', label: 'NLP, LLM & RAG' },
+  { key: 'module3', label: 'AI as Professional Assistant' },
   { key: 'general', label: 'General' },
 ];
 
@@ -75,9 +77,8 @@ export default function Readings() {
   const [query, setQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState('All Types');
   const [moduleFilter, setModuleFilter] = useState('all');
-  const [sectionFilter, setSectionFilter] = useState<'all'|'required'|'further'>('all');
+  const [sectionFilter, setSectionFilter] = useState<'all' | 'required' | 'further'>('all');
 
-  // Required readings placeholder (use 'general' as module placeholder)
   const requiredReadings: ReadItem[] = [];
 
   const filteredFurther = useMemo(() => {
@@ -90,7 +91,6 @@ export default function Readings() {
   }, [query, typeFilter, moduleFilter]);
 
   const filteredRequired = useMemo(() => {
-    // requiredReadings is empty in current content; kept for future items
     return requiredReadings.filter((it) => {
       const matchesQuery = it.title.toLowerCase().includes(query.trim().toLowerCase());
       const matchesType = typeFilter === 'All Types' || it.type === typeFilter;
@@ -120,7 +120,6 @@ export default function Readings() {
           <span className="bg-gradient-to-r from-cyan-500 to-purple-600 text-transparent bg-clip-text">Readings</span>
         </h1>
 
-        {/* Search */}
         <div className="mb-4">
           <input
             value={query}
@@ -131,16 +130,10 @@ export default function Readings() {
           />
         </div>
 
-        {/* Filters */}
-        <div className="flex flex-wrap items-center gap-4 mb-6">
+        <div className="flex flex-col gap-3 mb-6">
           <div className="flex items-center gap-2 flex-wrap">
             {typeOptions.map((t) => (
-              <button
-                key={t}
-                type="button"
-                onClick={() => setTypeFilter(t)}
-                className={t === typeFilter ? activeBtn : inactiveBtn}
-              >
+              <button key={t} type="button" onClick={() => setTypeFilter(t)} className={t === typeFilter ? activeBtn : inactiveBtn}>
                 {t}
               </button>
             ))}
@@ -148,12 +141,7 @@ export default function Readings() {
 
           <div className="ml-4 flex items-center gap-2 flex-wrap">
             {moduleOptions.map((m) => (
-              <button
-                key={m.key}
-                type="button"
-                onClick={() => setModuleFilter(m.key)}
-                className={m.key === moduleFilter ? activeBtn : inactiveBtn}
-              >
+              <button key={m.key} type="button" onClick={() => setModuleFilter(m.key)} className={m.key === moduleFilter ? activeBtn : inactiveBtn}>
                 {m.label}
               </button>
             ))}
@@ -161,12 +149,7 @@ export default function Readings() {
 
           <div className="ml-4 flex items-center gap-2 flex-wrap">
             {sectionOptions.map((s) => (
-              <button
-                key={s.key}
-                type="button"
-                onClick={() => setSectionFilter(s.key)}
-                className={s.key === sectionFilter ? activeBtn : inactiveBtn}
-              >
+              <button key={s.key} type="button" onClick={() => setSectionFilter(s.key as 'all' | 'required' | 'further')} className={s.key === sectionFilter ? activeBtn : inactiveBtn}>
                 {s.label}
               </button>
             ))}
@@ -175,35 +158,31 @@ export default function Readings() {
           <div className="ml-auto text-sm text-slate-500">Showing {totalResults} results</div>
         </div>
 
-        {/* Results */}
         <div className="space-y-8">
           {totalResults === 0 ? (
             <div className="text-center text-slate-600">No readings match your filters.</div>
           ) : (
-            <>
-              {/* Combined Results */}
-              <section>
-                <ul className="mt-4 space-y-5">
-                  {displayedItems.map((item, i) => (
-                    <li key={i} className="flex gap-4 items-start border-b border-slate-100 pb-4 last:border-0 last:pb-0">
-                      <span className={`mt-0.5 flex-shrink-0 text-xs font-semibold px-2 py-1 rounded border ${typeColors[item.type] ?? 'bg-slate-100 text-slate-700 border-slate-200'}`}>
-                        {item.type}
-                      </span>
-                      <div>
-                        <a href={item.href} className="font-medium text-slate-900 hover:text-purple-600 underline underline-offset-2" target="_blank" rel="noopener noreferrer">
-                          {item.title}
-                        </a>
-                        <p className="mt-1 text-sm text-slate-500">{item.desc}</p>
-                        <div className="mt-2 flex items-center gap-2">
-                          <span className="inline-block text-xs text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">{item.section}</span>
-                          <span className="inline-block text-sm text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">{moduleLabels[item.module ?? 'general']}</span>
-                        </div>
+            <section>
+              <ul className="mt-4 space-y-5">
+                {displayedItems.map((item, i) => (
+                  <li key={i} className="flex gap-4 items-start border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+                    <span className={`mt-0.5 flex-shrink-0 text-xs font-semibold px-2 py-1 rounded border ${typeColors[item.type] ?? 'bg-slate-100 text-slate-700 border-slate-200'}`}>
+                      {item.type}
+                    </span>
+                    <div>
+                      <a href={item.href} className="font-medium text-slate-900 hover:text-purple-600 underline underline-offset-2" target="_blank" rel="noopener noreferrer">
+                        {item.title}
+                      </a>
+                      <p className="mt-1 text-sm text-slate-500">{item.desc}</p>
+                      <div className="mt-2 flex items-center gap-2">
+                        <span className="inline-block text-xs text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">{item.section}</span>
+                        <span className="inline-block text-sm text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">{moduleLabels[item.module ?? 'general']}</span>
                       </div>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            </>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </section>
           )}
         </div>
       </div>
