@@ -65,13 +65,16 @@ export default function Schedule() {
         {selectedSub && (
           <div className="pt-12 mb-6 flex flex-col items-start gap-2">
             <button
-              className="text-sm text-slate-700 underline"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-purple-600 transition-colors duration-200"
               onClick={() => { window.location.hash = 'subclass-module-details'; }}
             >
-              ← View all subclasses
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              View all subclasses
             </button>
             <button
-              className="text-sm text-slate-700 underline"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-purple-600 transition-colors duration-200"
               onClick={() => {
                 window.location.hash = '/';
                 setTimeout(() => {
@@ -80,7 +83,10 @@ export default function Schedule() {
                 }, 120);
               }}
             >
-              ← Back to Table
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Back to Table
             </button>
           </div>
         )}
@@ -88,7 +94,7 @@ export default function Schedule() {
         <Section id="module-content" title="Module Content & Topics" headingId="module-content-topics" className="border-t-0">
           <div ref={moduleContentRef} className="module-cards">
             {modulesToShow.map((mod, idx) => {
-              const colorClass = mod.title?.startsWith('Module 1') ? 'm1' : mod.title?.startsWith('Module 2') ? 'm2' : mod.title?.startsWith('Module 3') ? 'm3' : `m${idx+1}`;
+              const colorClass = mod.title?.startsWith('Module 1') ? 'm1' : mod.title?.startsWith('Module 2') ? 'm2' : mod.title?.startsWith('Module 3') ? 'm3' : `m${idx + 1}`;
               return (
                 <div key={mod.title || idx} className={`module-card ${colorClass}`}>
                   <div className="module-accent" aria-hidden="true" />
