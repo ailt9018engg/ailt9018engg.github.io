@@ -190,7 +190,7 @@ export const courseData: CourseData = {
     {
       title: "Module 3: AI as Professional Assistant",
       description:
-        "After attending this module, you will be able to use AI tools to read and analyse technical documents, engineering papers, and patents, and communicate your findings clearly and efficiently. You will also gain hands-on experience using AI coding assistants such as GitHub Copilot to design, build, and deploy your own software projects. By the end of this module, you will be equipped to use AI confidently as a versatile professional tool across all areas of your engineering career.",
+        "After attending this module, you will learn how to use AI tools to read and analyse technical documents more effectively, including specifications, manuals, and reports. Through practical tutorials, you will perform technical reading with AI assistance, build your own prototype using AI tools via vibe coding, and prepare an AI-related project for engineering applications. By the end of this module, you will be able to critically read technical materials with AI support, develop a simple prototype from an idea, and plan an AI-enabled project with clearer goals and workflow.",
     },
 
   ],

@@ -6,6 +6,7 @@ const typeColors: Record<string, string> = {
   Article: 'bg-green-50 text-green-700 border-green-200',
   Book: 'bg-amber-50 text-amber-700 border-amber-200',
   Course: 'bg-teal-50 text-teal-700 border-teal-200',
+  Report: 'bg-violet-50 text-violet-700 border-violet-200',
 };
 
 type ReadItem = {
@@ -18,6 +19,7 @@ type ReadItem = {
 
 const furtherReadings: ReadItem[] = [
   { type: 'Paper', href: 'https://arxiv.org/pdf/1706.03762', title: 'Attention Is All You Need', desc: 'Introduces the Transformer architecture, foundational for understanding RAG, Agentic AI, and modern LLMs covered in the course.', module: 'module2' },
+  { type: 'Report', href: 'https://hai.stanford.edu/ai-index/2025-ai-index-report', title: 'Stanford HAI 2025 AI Index Report', desc: 'Stanford HAI\'s annual comprehensive report tracking the state of AI across research, industry, policy, and society—covering model performance benchmarks, economic impact, geopolitics of AI development, and emerging ethical concerns, serving as an authoritative data-driven reference for understanding AI\'s real-world trajectory.', module: 'general' },
   { type: 'Video', href: 'https://www.youtube.com/watch?v=eMlx5fFNoYc', title: '3Blue1Brown – "Attention in transformers, visually explained"', desc: 'Intuitive visual explanation of transformer architecture.', module: 'module2' },
   { type: 'Video', href: 'https://www.youtube.com/watch?v=LPZh9BOjkQs', title: '3Blue1Brown – "But what is a GPT? Visual intro to transformers"', desc: 'Intuitive visual explanation of how large language models work.', module: 'module2' },
   { type: 'Paper', href: 'https://arxiv.org/pdf/1506.02640', title: 'You Only Look Once: Unified, Real-Time Object Detection', desc: 'Introduces the original YOLO algorithm.', module: 'module1' },
@@ -58,7 +60,7 @@ const moduleLabels: Record<string, string> = {
   general: 'General',
 };
 
-const typeOptions = ['All Types', 'Paper', 'Article', 'Video', 'Book', 'Course'];
+const typeOptions = ['All Types', 'Paper', 'Article', 'Video', 'Book', 'Course', 'Report'];
 const moduleOptions = [
   { key: 'all', label: 'All' },
   { key: 'module1', label: 'Computer Vision' },

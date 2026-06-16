@@ -196,9 +196,9 @@ export default function Schedule() {
                 <tr className="border-t bg-white"><td className="px-4 py-3 w-16">6</td><td className="px-4 py-3 w-1/2">Advanced topics on RAG and RAG applications in engineering</td><td className="px-4 py-3 w-1/2">Unlock the capability of VLM</td></tr>
 
                 <tr className="bg-slate-100 border-t border-slate-200"><td colSpan="3" className="px-4 py-3 font-bold text-slate-900">Module 3: AI as Professional Assistant</td></tr>
-                <tr className="border-t bg-white"><td className="px-4 py-3 w-16">7</td><td className="px-4 py-3 w-1/2"></td><td className="px-4 py-3 w-1/2"></td></tr>
-                <tr className="border-t bg-white"><td className="px-4 py-3 w-16">8</td><td className="px-4 py-3 w-1/2"></td><td className="px-4 py-3 w-1/2"></td></tr>
-                <tr className="border-t bg-white"><td className="px-4 py-3 w-16">9</td><td className="px-4 py-3 w-1/2"></td><td className="px-4 py-3 w-1/2"></td></tr>
+                <tr className="border-t bg-white"><td className="px-4 py-3 w-16">7</td><td className="px-4 py-3 w-1/2">Reading and analysing technical documents with AI assistance</td><td className="px-4 py-3 w-1/2">Technical reading with AI</td></tr>
+                <tr className="border-t bg-white"><td className="px-4 py-3 w-16">8</td><td className="px-4 py-3 w-1/2">Building your own prototype with AI tools</td><td className="px-4 py-3 w-1/2">Vibe coding</td></tr>
+                <tr className="border-t bg-white"><td className="px-4 py-3 w-16">9</td><td className="px-4 py-3 w-1/2">Modern engineers in the world of AI</td><td className="px-4 py-3 w-1/2">Project preparation</td></tr>
               </tbody>
             </table>
           </div>
