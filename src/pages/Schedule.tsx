@@ -121,49 +121,58 @@ export default function Schedule() {
             <table className="min-w-full table-auto">
               <thead>
                 <tr className="text-left text-slate-700">
-                  <th className="px-4 py-2">Subclass</th>
+                  <th className="px-4 py-2">Subclass (Semester 1)</th>
+                  <th className="px-4 py-2">Subclass (Semester 2)</th>
                   <th className="px-4 py-2">Modules</th>
                   <th className="px-4 py-2">Tutorial session</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-t">
-                  <td className="px-4 py-3">A</td>
+                  <td className="px-4 py-3">A1</td>
+                  <td className="px-4 py-3">C1</td>
                   <td className="px-4 py-3">1+3</td>
                   <td className="px-4 py-3">T1</td>
                 </tr>
                 <tr className="border-t bg-white">
-                  <td className="px-4 py-3">B</td>
+                  <td className="px-4 py-3">A2</td>
+                  <td className="px-4 py-3">C2</td>
                   <td className="px-4 py-3">1+3</td>
                   <td className="px-4 py-3">T2</td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-4 py-3">C</td>
+                  <td className="px-4 py-3">A3</td>
+                  <td className="px-4 py-3">C3</td>
                   <td className="px-4 py-3">1+3</td>
                   <td className="px-4 py-3">T3</td>
                 </tr>
-                <tr className="border-t bg_white">
-                  <td className="px-4 py-3">D</td>
+                <tr className="border-t bg-white">
+                  <td className="px-4 py-3">A4</td>
+                  <td className="px-4 py-3">C4</td>
                   <td className="px-4 py-3">1+3</td>
                   <td className="px-4 py-3">T4</td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-4 py-3">E</td>
+                  <td className="px-4 py-3">B1</td>
+                  <td className="px-4 py-3">D1</td>
                   <td className="px-4 py-3">2+3</td>
                   <td className="px-4 py-3">T3</td>
                 </tr>
                 <tr className="border-t bg-white">
-                  <td className="px-4 py-3">F</td>
+                  <td className="px-4 py-3">B2</td>
+                  <td className="px-4 py-3">D2</td>
                   <td className="px-4 py-3">2+3</td>
                   <td className="px-4 py-3">T4</td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-4 py-3">G</td>
+                  <td className="px-4 py-3">B3</td>
+                  <td className="px-4 py-3">D3</td>
                   <td className="px-4 py-3">2+3</td>
                   <td className="px-4 py-3">T1</td>
                 </tr>
                 <tr className="border-t bg-white">
-                  <td className="px-4 py-3">H</td>
+                  <td className="px-4 py-3">B4</td>
+                  <td className="px-4 py-3">D4</td>
                   <td className="px-4 py-3">2+3</td>
                   <td className="px-4 py-3">T2</td>
                 </tr>
