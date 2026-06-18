@@ -90,7 +90,7 @@ export default function App() {
             <p>AILT9018 is a mandatory 3-credit AI literacy course for Year 2 Engineering undergraduates at HKU. If you are enrolled in one of the following programmes, you are required to take this course:</p>
             <ul className="list-disc list-inside mt-4 space-y-2">
                 <li>BEng in Civil Engineering [BEng(CivE)]</li>
-                <li>BEng in Computer Engineering / Electrical Engineering / Electronic Engineering [BEng(CompE) / BEng(EE) / BEng(ElecE)]</li>
+                <li>BEng in Computer Engineering / Electrical Engineering / Electronic Engineering [BEng(CE) / BEng(EE) / BEng(ElecE)]</li>
                 <li>BEng in Data and Systems Engineering [BEng(DASE)]</li>
                 <li>BEng in Mechanical Engineering [BEng(MechE)]</li>
             </ul>
