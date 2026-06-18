@@ -92,7 +92,7 @@ export default function App() {
                 <li>BEng in Civil Engineering [BEng(CivE)]</li>
                 <li>BEng in Computer Engineering / Electrical Engineering / Electronic Engineering [BEng(CE) / BEng(EE) / BEng(ElecE)]</li>
                 <li>BEng in Data and Systems Engineering [BEng(DASE)]</li>
-                <li>BEng in Mechanical Engineering [BEng(MechE)]</li>
+                <li>BEng in Mechanical Engineering [BEng(ME)]</li>
             </ul>
             <div className="rounded-lg border border-blue-200 bg-blue-50 px-4 py-3 mt-4 text-blue-800 text-sm font-medium">
                 <strong>Prerequisite:</strong> AILT1001 (AI Literacy I) must be completed before enrolling in AILT9018.
