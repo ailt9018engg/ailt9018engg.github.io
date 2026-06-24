@@ -2,16 +2,22 @@ import React from 'react';
 import { courseData } from '../data.ts';
 import { Section } from './Section.tsx';
 
-const TeamCard = ({ name, photoPath }: { name: string; photoPath: string }) => {
+type StaffMember = {
+  name: string;
+  title: string;
+  photoPath: string;
+};
+
+const TeamCard = ({ name, title, photoPath }: StaffMember) => {
   const [imgError, setImgError] = React.useState(false);
 
   return (
-    <div className="text-center">
-      <div className="relative w-40 h-40 mx-auto mb-4">
+    <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-0.5 hover:shadow-md">
+      <div className="relative w-32 h-32 sm:w-36 sm:h-36 mx-auto mb-5">
         {!imgError ? (
-          <img 
-            src={photoPath} 
-            alt={`Photo of ${name}`} 
+          <img
+            src={photoPath}
+            alt={`Photo of ${name}`}
             className="w-full h-full rounded-full object-cover shadow-lg bg-slate-200"
             onError={() => setImgError(true)}
           />
@@ -23,27 +29,18 @@ const TeamCard = ({ name, photoPath }: { name: string; photoPath: string }) => {
           </div>
         )}
       </div>
-      <h3 className="text-xl font-semibold text-slate-800">{name}</h3>
+      <h3 className="text-xl font-semibold text-slate-900">{name}</h3>
+      <p className="mt-2 text-sm text-slate-500">{title}</p>
     </div>
   );
 };
 
 export const LecturersAndTAs = () => (
   <Section id="LecturersAndTAs" title="Meet the Teaching Team">
-    <div>
-      <h3 className="text-2xl font-semibold text-slate-900 mb-8">Lecturers</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8 mb-12">
-        {courseData.lecturers.map((lecturer, index) => (
-          <TeamCard key={index} name={lecturer.name} photoPath={lecturer.photoPath} />
-        ))}
-      </div>
-
-      <h3 className="text-2xl font-semibold text-slate-900 mb-8">Teaching Assistants</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8">
-        {courseData.TeachingAssistants.map((ta, index) => (
-          <TeamCard key={index} name={ta.name} photoPath={ta.photoPath} />
-        ))}
-      </div>
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {courseData.teachingTeam.map((member, index) => (
+        <TeamCard key={index} name={member.name} title={member.title} photoPath={member.photoPath} />
+      ))}
     </div>
   </Section>
 );

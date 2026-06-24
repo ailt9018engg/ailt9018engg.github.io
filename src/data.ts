@@ -62,13 +62,10 @@ export interface CourseData {
   }[];
   summary: string;
   courseWebsite: string;
-  lecturers: {
+  teachingTeam: {
     name: string;
+    title: string;
     photoPath: string;
-  }[];
-  TeachingAssistants: {
-  name: string;
-  photoPath: string;
   }[];
 }
 
@@ -202,9 +199,15 @@ export const courseData: CourseData = {
     { name: "Dr. Kevin WU", photoPath: "/images/kevin.png" },
 //    { name: "Dr. Lecturer Three", photoPath: "/images/lecturer3.png" },
   ],
-  TeachingAssistants: [
-    { name: "Mr. Karlos MA", photoPath: "/images/karlos.png" },
-    { name: "Mr. Joe CHAN", photoPath: "/images/Joe.png" },
+  teachingTeam: [
+    { name: "Dr. Lei YANG", title: "Lecturer", photoPath: "/images/lei.png" },
+    { name: "Dr. Kevin WU", title: "Lecturer", photoPath: "/images/kevin.png" },
+    { name: "Dr. Timmy CHENG", title: "Lecturer", photoPath: "/images/Timmy-scaled.jpg" },
+    { name: "Dr. Ryan WANG", title: "Lecturer", photoPath: "/images/Ryan.jpg" },
+    { name: "Dr. Edwin DUNG", title: "Lecturer", photoPath: "/images/Edwin.jpg" },
+    { name: "Mr. Kyle HE", title: "Assistant Lecturer", photoPath: "/images/Kyle.jpg" },
+    { name: "Mr. Karlos MA", title: "Teaching Assistant", photoPath: "/images/karlos.png" },
+    { name: "Mr. Joe CHAN", title: "Teaching Assistant", photoPath: "/images/Joe.png" },
   ],
 };
 
