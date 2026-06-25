@@ -31,7 +31,7 @@ const Hero = () => (
 );
 
 const InfoCard = ({ icon, title, children }: { icon: React.ReactNode, title: string, children: React.ReactNode }) => (
-    <div className="bg-slate-100/50 p-6 rounded-lg flex items-start space-x-4 transition-all duration-300 hover:bg-white hover:shadow-2xl hover:shadow-purple-500/10">
+    <div className="bg-slate-100/50 p-6 rounded-lg flex items-start space-x-4 h-full transition-all duration-300 hover:bg-white hover:shadow-2xl hover:shadow-purple-500/10">
         <div className="flex-shrink-0 w-10 h-10 bg-slate-200 rounded-lg flex items-center justify-center text-purple-600">
             {icon}
         </div>
@@ -67,14 +67,18 @@ export default function App() {
       <main className="-mt-32 relative z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
             <div className="bg-white/60 backdrop-blur-lg border border-slate-200/70 rounded-xl shadow-2xl shadow-slate-300/50 p-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
                     <InfoCard icon={<UserIcon />} title="Course Coordinator">
                         {courseData.coordinator.name}
                     </InfoCard>
                     <InfoCard icon={<TeacherIcon />} title="Instructors">
-                        {courseData.instructors.map((instructor) => (
-                            <div key={instructor}>{instructor}</div>
-                        ))}
+                        <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-slate-600">
+                            {courseData.instructors.map((instructor) => (
+                                <div key={instructor} className="text-sm leading-6">
+                                    {instructor}
+                                </div>
+                            ))}
+                        </div>
                     </InfoCard>
                     <InfoCard icon={<CreditIcon />} title="Credits">{courseData.credits}</InfoCard>
                     <InfoCard icon={<PrerequisiteIcon />} title="Pre-requisite">{courseData.prerequisite}</InfoCard>
