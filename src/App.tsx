@@ -129,56 +129,56 @@ export default function App() {
             <th>Details</th>
           </tr>
         </thead>
-        <tbody>
-          <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=A'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=A'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
-            <td>A</td>
-            <td><span className="mod-badge badge-m1">Module 1: Deep Learning for Computer Vision</span></td>
-            <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
-            <td><a href="#subclass-module-details?sub=A&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
-          </tr>
-          <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=B'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=B'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
-            <td>B</td>
-            <td><span className="mod-badge badge-m1">Module 1: Deep Learning for Computer Vision</span></td>
-            <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
-            <td><a href="#subclass-module-details?sub=B&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
-          </tr>
-          <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=C'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=C'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
-            <td>C</td>
-            <td><span className="mod-badge badge-m1">Module 1: Deep Learning for Computer Vision</span></td>
-            <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
-            <td><a href="#subclass-module-details?sub=C&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
-          </tr>
-          <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=D'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=D'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
-            <td>D</td>
-            <td><span className="mod-badge badge-m1">Module 1: Deep Learning for Computer Vision</span></td>
-            <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
-            <td><a href="#subclass-module-details?sub=D&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
-          </tr>
-          <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=E'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=E'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
-            <td>E</td>
-            <td><span className="mod-badge badge-m2">Module 2: Fundamentals in NLP, LLM and RAG</span></td>
-            <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
-            <td><a href="#subclass-module-details?sub=E&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
-          </tr>
-          <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=F'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=F'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
-            <td>F</td>
-            <td><span className="mod-badge badge-m2">Module 2: Fundamentals in NLP, LLM and RAG</span></td>
-            <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
-            <td><a href="#subclass-module-details?sub=F&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
-          </tr>
-          <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=G'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=G'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
-            <td>G</td>
-            <td><span className="mod-badge badge-m2">Module 2: Fundamentals in NLP, LLM and RAG</span></td>
-            <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
-            <td><a href="#subclass-module-details?sub=G&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
-          </tr>
-          <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=H'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=H'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
-            <td>H</td>
-            <td><span className="mod-badge badge-m2">Module 2: Fundamentals in NLP, LLM and RAG</span></td>
-            <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
-            <td><a href="#subclass-module-details?sub=H&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
-          </tr>
-        </tbody>
+                <tbody>
+                    <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=A1'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=A1'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
+                        <td>A1</td>
+                        <td><span className="mod-badge badge-m1">Module 1: Deep Learning for Computer Vision</span></td>
+                        <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
+                        <td><a href="#subclass-module-details?sub=A1&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
+                    </tr>
+                    <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=A2'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=A2'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
+                        <td>A2</td>
+                        <td><span className="mod-badge badge-m1">Module 1: Deep Learning for Computer Vision</span></td>
+                        <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
+                        <td><a href="#subclass-module-details?sub=A2&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
+                    </tr>
+                    <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=A3'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=A3'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
+                        <td>A3</td>
+                        <td><span className="mod-badge badge-m1">Module 1: Deep Learning for Computer Vision</span></td>
+                        <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
+                        <td><a href="#subclass-module-details?sub=A3&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
+                    </tr>
+                    <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=A4'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=A4'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
+                        <td>A4</td>
+                        <td><span className="mod-badge badge-m1">Module 1: Deep Learning for Computer Vision</span></td>
+                        <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
+                        <td><a href="#subclass-module-details?sub=A4&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
+                    </tr>
+                    <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=B1'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=B1'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
+                        <td>B1</td>
+                        <td><span className="mod-badge badge-m2">Module 2: Fundamentals in NLP, LLM and RAG</span></td>
+                        <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
+                        <td><a href="#subclass-module-details?sub=B1&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
+                    </tr>
+                    <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=B2'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=B2'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
+                        <td>B2</td>
+                        <td><span className="mod-badge badge-m2">Module 2: Fundamentals in NLP, LLM and RAG</span></td>
+                        <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
+                        <td><a href="#subclass-module-details?sub=B2&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
+                    </tr>
+                    <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=B3'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=B3'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
+                        <td>B3</td>
+                        <td><span className="mod-badge badge-m2">Module 2: Fundamentals in NLP, LLM and RAG</span></td>
+                        <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
+                        <td><a href="#subclass-module-details?sub=B3&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
+                    </tr>
+                    <tr className="clickable-row" role="button" tabIndex={0} onClick={() => { window.location.hash = 'subclass-module-details?sub=B4'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); }} onKeyDown={(e) => { if ((e as any).key === 'Enter') { window.location.hash = 'subclass-module-details?sub=B4'; setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 50); } }}>
+                        <td>B4</td>
+                        <td><span className="mod-badge badge-m2">Module 2: Fundamentals in NLP, LLM and RAG</span></td>
+                        <td><span className="mod-badge badge-m3">Module 3: AI as Professional Assistant</span></td>
+                        <td><a href="#subclass-module-details?sub=B4&view=schedule" className="details-link" onClick={(e) => e.stopPropagation()}>Schedule &amp; venue →</a></td>
+                    </tr>
+                </tbody>
       </table>
     </div>
   </div>

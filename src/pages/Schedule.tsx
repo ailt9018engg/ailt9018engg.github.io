@@ -3,14 +3,14 @@ import { courseData } from '../data.ts';
 import { Section } from '../components/Section.tsx';
 
 const subclassMap: Record<string, number[]> = {
-  A: [0, 2],
-  B: [0, 2],
-  C: [0, 2],
-  D: [0, 2],
-  E: [1, 2],
-  F: [1, 2],
-  G: [1, 2],
-  H: [1, 2],
+  A1: [0, 2],
+  A2: [0, 2],
+  A3: [0, 2],
+  A4: [0, 2],
+  B1: [1, 2],
+  B2: [1, 2],
+  B3: [1, 2],
+  B4: [1, 2],
 };
 
 export default function Schedule() {
@@ -132,54 +132,54 @@ export default function Schedule() {
                   <td className="px-4 py-3">A1</td>
                   <td className="px-4 py-3">C1</td>
                   <td className="px-4 py-3">1+3</td>
-                  <td className="px-4 py-3">T1</td>
+                  <td className="px-4 py-3">To be confirmed</td>
                 </tr>
                 <tr className="border-t bg-white">
                   <td className="px-4 py-3">A2</td>
                   <td className="px-4 py-3">C2</td>
                   <td className="px-4 py-3">1+3</td>
-                  <td className="px-4 py-3">T2</td>
+                  <td className="px-4 py-3">To be confirmed</td>
                 </tr>
                 <tr className="border-t">
                   <td className="px-4 py-3">A3</td>
                   <td className="px-4 py-3">C3</td>
                   <td className="px-4 py-3">1+3</td>
-                  <td className="px-4 py-3">T3</td>
+                  <td className="px-4 py-3">To be confirmed</td>
                 </tr>
                 <tr className="border-t bg-white">
                   <td className="px-4 py-3">A4</td>
                   <td className="px-4 py-3">C4</td>
                   <td className="px-4 py-3">1+3</td>
-                  <td className="px-4 py-3">T4</td>
+                  <td className="px-4 py-3">To be confirmed</td>
                 </tr>
                 <tr className="border-t">
                   <td className="px-4 py-3">B1</td>
                   <td className="px-4 py-3">D1</td>
                   <td className="px-4 py-3">2+3</td>
-                  <td className="px-4 py-3">T3</td>
+                  <td className="px-4 py-3">To be confirmed</td>
                 </tr>
                 <tr className="border-t bg-white">
                   <td className="px-4 py-3">B2</td>
                   <td className="px-4 py-3">D2</td>
                   <td className="px-4 py-3">2+3</td>
-                  <td className="px-4 py-3">T4</td>
+                  <td className="px-4 py-3">To be confirmed</td>
                 </tr>
                 <tr className="border-t">
                   <td className="px-4 py-3">B3</td>
                   <td className="px-4 py-3">D3</td>
                   <td className="px-4 py-3">2+3</td>
-                  <td className="px-4 py-3">T1</td>
+                  <td className="px-4 py-3">To be confirmed</td>
                 </tr>
                 <tr className="border-t bg-white">
                   <td className="px-4 py-3">B4</td>
                   <td className="px-4 py-3">D4</td>
                   <td className="px-4 py-3">2+3</td>
-                  <td className="px-4 py-3">T2</td>
+                  <td className="px-4 py-3">To be confirmed</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-sm text-slate-600">Note: T1, T2, T3, T4 are placeholders for tutorial day and time (e.g., Monday, 14:00-16:00) and will be replaced when confirmed.</p>
+          
         </Section>
 
         <Section id="schedule" title="Schedule">
